@@ -18,6 +18,7 @@ Requires Node >= 22.12.0 (see `package.json` engines).
 
 ## Deployment
 - Chain: GitHub private repo (`chncaesar/yc-site`) → push to `main` → EdgeOne Makers auto-build → deploy to global edge → domain `禹畅.com`.
+- Makers project name: `yc-site`, preview URL: `yc-site-ba9gnexi.edgeone.cool`.
 - Static-only output; no SSR/server runtime.
 - Build command: `npm run build`, output directory: `dist` (configured in Makers project settings).
 - Node version specified via `.nvmrc` in repo root (`22`) — Makers reads this to select the correct Node runtime.
