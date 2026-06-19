@@ -1,0 +1,43 @@
+name: Deploy to Tencent COS
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Set production site URL
+        run: sed -i "s|site: 'https://example.com'|site: 'https://禹畅.com'|" astro.config.mjs
+
+      - name: Build
+        run: npm run build
+
+      - name: Install coscmd
+        run: pip install coscmd
+
+      - name: Configure coscmd
+        env:
+          COS_SECRET_ID: ${{ secrets.COS_SECRET_ID }}
+          COS_SECRET_KEY: ${{ secrets.COS_SECRET_KEY }}
+          COS_BUCKET: ${{ vars.COS_BUCKET }}
+          COS_REGION: ${{ vars.COS_REGION }}
+        run: coscmd config -a $COS_SECRET_ID -s $COS_SECRET_KEY -b $COS_BUCKET -r $COS_REGION
+
+      - name: Deploy to COS
+        run: |
+          coscmd delete -r -f /
+          coscmd upload -r dist/ /
+          coscmd list -ar /
