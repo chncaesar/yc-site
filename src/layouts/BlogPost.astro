@@ -11,76 +11,180 @@ type Props = CollectionEntry<'blog'>['data'];
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="zh-CN">
 	<head>
 		<BaseHead title={title} description={description} />
-		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-			}
-			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
-			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-		</style>
 	</head>
 
 	<body>
 		<Header />
+
 		<main>
 			<article>
-				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
-				</div>
+				{heroImage && (
+					<div class="hero-image">
+						<Image width={1020} height={510} src={heroImage} alt="" />
+					</div>
+				)}
+
 				<div class="prose">
-					<div class="title">
-						<div class="date">
+					<div class="article-header">
+						<div class="article-meta">
 							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
+							{updatedDate && (
+								<span class="updated">· 更新于 <FormattedDate date={updatedDate} /></span>
+							)}
 						</div>
 						<h1>{title}</h1>
-						<hr />
+						{description && <p class="article-desc">{description}</p>}
 					</div>
-					<slot />
+
+					<hr />
+
+					<div class="article-body">
+						<slot />
+					</div>
+
+					<!-- 文章底部联系模块 -->
+					<div class="contact-block" id="contact">
+						<h3>找到靠谱的青年中医？</h3>
+						<p>我采访过全国几十位好中医，也许能帮你找到适合的那一位。</p>
+						<p>或者你是一位有疗效、却缺少传播渠道的青年中医，欢迎联系我。</p>
+						<p class="phone">微信 / 电话：13515813188</p>
+					</div>
 				</div>
 			</article>
 		</main>
+
 		<Footer />
 	</body>
 </html>
+
+<style>
+main {
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.hero-image {
+	width: 100%;
+	max-height: 420px;
+	overflow: hidden;
+}
+
+.hero-image img {
+	width: 100%;
+	height: 420px;
+	object-fit: cover;
+	border-radius: 0;
+}
+
+.prose {
+	width: var(--max-prose);
+	max-width: calc(100% - 2em);
+	margin: 0 auto;
+	padding: 2.5em 1em 4em;
+}
+
+/* 文章头部 */
+.article-header {
+	margin-bottom: 2em;
+}
+
+.article-meta {
+	font-size: 0.82em;
+	color: rgb(var(--ink-light));
+	margin-bottom: 0.8em;
+	letter-spacing: 0.03em;
+}
+
+.updated {
+	margin-left: 0.3em;
+	font-style: italic;
+}
+
+.article-header h1 {
+	font-family: var(--font-serif);
+	font-size: clamp(1.6em, 4vw, 2.2em);
+	color: var(--green-dark);
+	line-height: 1.35;
+	margin: 0 0 0.6em;
+}
+
+.article-desc {
+	font-size: 1.05em;
+	color: rgb(var(--ink-mid));
+	line-height: 1.8;
+	margin: 0;
+	border-left: 3px solid var(--gold);
+	padding-left: 1em;
+}
+
+/* 正文 */
+.article-body {
+	font-size: 1.05em;
+	line-height: 1.9;
+}
+
+.article-body :global(h2) {
+	font-family: var(--font-serif);
+	font-size: 1.35em;
+	color: var(--green-dark);
+	margin: 2.2em 0 0.8em;
+	padding-bottom: 0.3em;
+	border-bottom: 1px solid var(--paper-dark);
+}
+
+.article-body :global(h3) {
+	font-family: var(--font-serif);
+	font-size: 1.1em;
+	color: var(--green-dark);
+	margin: 1.8em 0 0.5em;
+}
+
+.article-body :global(strong) {
+	color: var(--green-dark);
+	font-weight: 700;
+}
+
+/* 金句强化：单独加粗行 */
+.article-body :global(p strong:only-child),
+.article-body :global(p > strong:first-child:last-child) {
+	display: block;
+	font-family: var(--font-serif);
+	font-size: 1.1em;
+	color: var(--green-dark);
+	border-left: 4px solid var(--gold);
+	padding: 0.4em 0 0.4em 1em;
+	margin: 1.5em 0;
+	background: rgba(201,168,76,0.06);
+	border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.article-body :global(blockquote) {
+	border-left: 4px solid var(--gold);
+	padding: 0.5em 0 0.5em 1.2em;
+	margin: 1.5em 0;
+	font-family: var(--font-serif);
+	font-size: 1.05em;
+	color: var(--green-dark);
+	background: rgba(201,168,76,0.06);
+	border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.article-body :global(hr) {
+	margin: 2.5em 0;
+}
+
+@media (max-width: 600px) {
+	.hero-image img {
+		height: 220px;
+	}
+
+	.prose {
+		padding: 1.5em 1em 3em;
+	}
+}
+</style>

@@ -17,10 +17,12 @@ Requires Node >= 22.12.0 (see `package.json` engines).
 - Shared layout/components in `src/layouts/` and `src/components/`; global font (Atkinson, local provider) configured in `astro.config.mjs`.
 
 ## Deployment
-- Chain: GitHub private repo (`chncaesar/yc-site`) → GitHub Actions `npm run build` → upload `dist/` to Tencent Cloud COS static hosting → domain `禹畅.com`.
+- Chain: GitHub private repo (`chncaesar/yc-site`) → push to `main` → EdgeOne Makers auto-build → deploy to global edge → domain `禹畅.com`.
 - Static-only output; no SSR/server runtime.
+- Build command: `npm run build`, output directory: `dist` (configured in Makers project settings).
+- Node version specified via `.nvmrc` in repo root (`22`) — Makers reads this to select the correct Node runtime.
 - Before deploy, set `astro.config.mjs` `site` to the real `禹畅.com` URL (it still reads `https://example.com`) so canonical URLs, sitemap, and RSS are correct.
-- **COS credentials must live in GitHub Secrets** (Settings → Secrets and variables → Actions), never committed to `.yml`. Use a least-privilege CAM sub-account key scoped to the target COS bucket only — not the master account key.
+- **Free tier limits:** KV storage 1GB, Blob storage 1GB, 500 builds/month.
 
 ## Content & author voice
 The blog is a collection of 中文 long-form profiles of "青年中医" (young TCM doctors), written by one media author. When writing/editing posts, match this established voice:

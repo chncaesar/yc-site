@@ -1,63 +1,264 @@
 ---
-import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 ---
 
-<Layout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
-	heroImage={AboutHeroImage}
->
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-	</p>
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead
+			title="关于禹畅 · 明医志"
+			description="有底线的原党报版面负责人，中医考证中采访了全国几十位好中医，致力于用专业内容帮助青年中医走过最初的一公里。"
+		/>
+	</head>
+	<body>
+		<Header />
 
-	<p>
-		Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
-		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
-		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
-		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
-		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-		Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
-		bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
-		massa massa ultricies mi.
-	</p>
+		<!-- 人物头部 -->
+		<section class="profile-hero">
+			<div class="profile-inner">
+				<div class="profile-text">
+					<p class="profile-label">资深中医运营 · 媒体人</p>
+					<h1>禹畅</h1>
+					<p class="profile-tagline">
+						用专业拿结果。<br />
+						写明医的人很少，我来写。
+					</p>
+				</div>
+			</div>
+		</section>
 
-	<p>
-		Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl
-		suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet
-		nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae
-		turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem
-		dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat
-		semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-		vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum
-		facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam
-		vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla
-		urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
-	</p>
+		<!-- 一句话介绍 -->
+		<section class="bio-section">
+			<div class="bio-inner">
+				<p class="bio-text">
+					有底线的原党报版面负责人，莆田系医院当道时曾拒绝其冠名；中医考证中，采访了全国几十位好中医；多项国家专利，曾作为重要贡献者获300万科技补助，高交会&国际工博会奖项；会带娃爬树，玩飞拉达，种菜。
+				</p>
+			</div>
+		</section>
 
-	<p>
-		Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper
-		viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc
-		scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur
-		gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus
-		pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-		blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id
-		cursus metus aliquam eleifend mi.
-	</p>
+		<!-- 四个能力模块 -->
+		<section class="skills-section">
+			<div class="skills-inner">
+				<h2 class="section-title">能力背景</h2>
+				<div class="skills-grid">
 
-	<p>
-		Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta
-		nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam
-		tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci
-		ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
-	</p>
-</Layout>
+					<div class="skill-card">
+						<div class="skill-tag">中医方面</div>
+						<ul>
+							<li>1篇专访让0门诊医生满号</li>
+							<li>1篇小红书让医生持续满号</li>
+							<li>0-1打造医馆&医生IP | 医生开发</li>
+							<li>赋能医生、患者，实现流量裂变</li>
+							<li>自学中医6+年，中西医专业内容大众翻译</li>
+							<li>2天解决父亲肠梗阻 | 让20年高血压的母亲断药</li>
+						</ul>
+					</div>
+
+					<div class="skill-card">
+						<div class="skill-tag">政府关系</div>
+						<ul>
+							<li>接待报道张德江、俞振声等领导人</li>
+							<li>国家总局产品升级，策展国际工博会、高交会</li>
+							<li>获科技部部长接见，国家级奖项</li>
+							<li>成功申报省科技厅项目，获300万奖励</li>
+							<li>成功处理多起危机事件 | 公共事件伤者谈判</li>
+							<li>将分公司政府评级从最低提升至最高</li>
+						</ul>
+					</div>
+
+					<div class="skill-card">
+						<div class="skill-tag">管理改进</div>
+						<ul>
+							<li>世界500强（波音兄弟公司）流程改进专家、讲师</li>
+							<li>跨部门优化8大流程，效率提升30–70%</li>
+							<li>0到1主导客户满意度提升项目，获全球总裁奖</li>
+							<li>技师实习生留任率 10% → 90%，离职率↓50%</li>
+							<li>为公司赢得律师判断稳输的仲裁&诉讼</li>
+						</ul>
+					</div>
+
+					<div class="skill-card">
+						<div class="skill-tag">媒体策划</div>
+						<ul>
+							<li>前党报版面负责人，拒绝莆田系医院冠名</li>
+							<li>针对社会热点特增舆情内参，直呈书记</li>
+							<li>有2000人+大型活动策划执行经验</li>
+							<li>业绩超前一年6.9倍，与后一年4–5人业绩持平</li>
+							<li>策划网站开通仅3个月即获全国二等奖</li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="credentials">
+					多项国家专利 · 平面设计&摄影比赛获奖 · 美国管理协会TTT讲师 · 英标三体系审核员
+				</div>
+			</div>
+		</section>
+
+		<!-- 联系模块 -->
+		<section class="contact-section" id="contact">
+			<div class="contact-inner">
+				<div class="contact-block">
+					<h3>联系禹畅</h3>
+					<p>你是有疗效却缺少传播渠道的青年中医？<br />或者你想找一位真正能治病的好医生？</p>
+					<p>欢迎联系，一人抵4-5人。</p>
+					<p class="phone">微信 / 电话：13515813188</p>
+				</div>
+			</div>
+		</section>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+/* 人物头部 */
+.profile-hero {
+	background: var(--green-dark);
+	padding: 4em 1.5em 3.5em;
+}
+
+.profile-inner {
+	max-width: 680px;
+	margin: 0 auto;
+}
+
+.profile-label {
+	font-size: 0.82em;
+	letter-spacing: 0.15em;
+	color: var(--gold);
+	text-transform: uppercase;
+	margin: 0 0 0.6em;
+}
+
+.profile-hero h1 {
+	font-family: var(--font-serif);
+	font-size: clamp(2.4em, 6vw, 3.5em);
+	color: var(--paper);
+	margin: 0 0 0.5em;
+	line-height: 1.1;
+}
+
+.profile-tagline {
+	font-size: 1.1em;
+	color: rgba(247,243,236,0.75);
+	line-height: 1.8;
+	margin: 0;
+}
+
+/* 一句话 */
+.bio-section {
+	background: var(--paper-dark);
+	padding: 2.5em 1.5em;
+}
+
+.bio-inner {
+	max-width: 680px;
+	margin: 0 auto;
+}
+
+.bio-text {
+	font-size: 1.05em;
+	line-height: 1.95;
+	color: rgb(var(--ink));
+	margin: 0;
+}
+
+/* 能力模块 */
+.skills-section {
+	background: var(--paper);
+	padding: 3.5em 1.5em 4em;
+}
+
+.skills-inner {
+	max-width: var(--max-wide);
+	margin: 0 auto;
+}
+
+.section-title {
+	font-family: var(--font-serif);
+	font-size: 1.4em;
+	color: var(--green-dark);
+	margin: 0 0 1.5em;
+	padding-bottom: 0.5em;
+	border-bottom: 2px solid var(--gold);
+	display: inline-block;
+}
+
+.skills-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5em;
+	margin-bottom: 2em;
+}
+
+.skill-card {
+	background: var(--white);
+	border-radius: var(--radius-lg);
+	padding: 1.5em;
+	box-shadow: var(--shadow-sm);
+}
+
+.skill-tag {
+	display: inline-block;
+	background: var(--green-dark);
+	color: var(--gold);
+	font-size: 0.8em;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	padding: 0.25em 0.8em;
+	border-radius: 100px;
+	margin-bottom: 1em;
+}
+
+.skill-card ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.skill-card ul li {
+	font-size: 0.88em;
+	line-height: 1.7;
+	color: rgb(var(--ink));
+	padding: 0.25em 0;
+	border-bottom: 1px solid var(--paper-dark);
+}
+
+.skill-card ul li:last-child {
+	border-bottom: none;
+}
+
+.credentials {
+	text-align: center;
+	font-size: 0.82em;
+	color: rgb(var(--ink-light));
+	letter-spacing: 0.03em;
+	padding: 1.5em 0 0;
+	border-top: 1px solid var(--paper-dark);
+}
+
+/* 联系 */
+.contact-section {
+	background: var(--paper-dark);
+	padding: 3em 1.5em;
+}
+
+.contact-inner {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+@media (max-width: 720px) {
+	.skills-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.profile-hero {
+		padding: 3em 1em 2.5em;
+	}
+}
+</style>

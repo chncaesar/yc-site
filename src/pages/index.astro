@@ -1,49 +1,327 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+const allPosts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+const featured = allPosts.slice(0, 3);
+const rest = allPosts.slice(3);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
 		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
+
+		<!-- Hero -->
+		<section class="hero">
+			<div class="hero-inner">
+				<p class="hero-eyebrow">明医志 · 青年中医专访</p>
+				<h1>找到那个能<br />治好你的人</h1>
+				<p class="hero-sub">
+					行业里最会吆喝的人，往往不是最会治病的人。<br />
+					我写青年中医——投给疗效，不投给流量。
+				</p>
+				<a href="/blog" class="btn">读文章</a>
+				<a href="/about" class="btn btn-outline">了解作者</a>
+			</div>
+		</section>
+
+		<!-- 精选文章 -->
+		<section class="featured">
+			<div class="section-inner">
+				<h2 class="section-title">近期专访</h2>
+				<ul class="cards">
+					{featured.map((post) => (
+						<li class="card">
+							<a href={`/blog/${post.id}/`}>
+								<div class="card-body">
+									<h3 class="card-title">{post.data.title}</h3>
+									<p class="card-desc">{post.data.description}</p>
+									<span class="card-read">阅读全文 →</span>
+								</div>
+							</a>
+						</li>
+					))}
+				</ul>
+			</div>
+		</section>
+
+		<!-- 关于作者 -->
+		<section class="about-strip">
+			<div class="section-inner about-inner">
+				<div class="about-text">
+					<p class="about-label">关于作者</p>
+					<p class="about-bio">
+						有底线的原党报版面负责人，莆田系医院当道时曾拒绝其冠名；中医考证中，采访了全国几十位好中医；多项国家专利，曾作为重要贡献者获300万科技补助，高交会&国际工博会奖项；会带娃爬树，玩飞拉达，种菜。
+					</p>
+					<a href="/about" class="btn">了解禹畅 →</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- 全部文章 -->
+		{rest.length > 0 && (
+			<section class="all-posts">
+				<div class="section-inner">
+					<h2 class="section-title">全部文章</h2>
+					<ul class="post-list">
+						{rest.map((post) => (
+							<li class="post-item">
+								<a href={`/blog/${post.id}/`}>
+									<span class="post-title">{post.data.title}</span>
+									<span class="post-desc">{post.data.description}</span>
+								</a>
+							</li>
+						))}
+					</ul>
+				</div>
+			</section>
+		)}
+
 		<Footer />
 	</body>
 </html>
+
+<style>
+/* ── Hero ── */
+.hero {
+	background: var(--green-dark);
+	color: var(--paper);
+	padding: 5em 1.5em 4em;
+}
+
+.hero-inner {
+	max-width: 680px;
+	margin: 0 auto;
+}
+
+.hero-eyebrow {
+	font-size: 0.85em;
+	letter-spacing: 0.15em;
+	color: var(--gold);
+	text-transform: uppercase;
+	margin-bottom: 0.8em;
+}
+
+.hero h1 {
+	font-family: var(--font-serif);
+	font-size: clamp(2.4em, 6vw, 3.6em);
+	color: var(--paper);
+	line-height: 1.2;
+	margin: 0 0 0.6em;
+}
+
+.hero-sub {
+	font-size: 1.05em;
+	color: rgba(247,243,236,0.75);
+	line-height: 1.8;
+	margin-bottom: 2em;
+}
+
+.hero .btn {
+	margin-right: 1em;
+	margin-bottom: 0.8em;
+}
+
+.hero .btn-outline {
+	border-color: rgba(201,168,76,0.6);
+	color: var(--gold-light);
+}
+
+.hero .btn-outline:hover {
+	background: var(--gold);
+	color: var(--green-dark);
+	border-color: var(--gold);
+}
+
+/* ── Section base ── */
+.section-inner {
+	max-width: var(--max-wide);
+	margin: 0 auto;
+	padding: 0 1.5em;
+}
+
+.section-title {
+	font-family: var(--font-serif);
+	font-size: 1.4em;
+	color: var(--green-dark);
+	margin: 0 0 1.5em;
+	padding-bottom: 0.5em;
+	border-bottom: 2px solid var(--gold);
+	display: inline-block;
+}
+
+/* ── 精选文章卡片 ── */
+.featured {
+	padding: 4em 0 3em;
+	background: var(--paper);
+}
+
+.cards {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5em;
+}
+
+.card {
+	background: var(--white);
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow-sm);
+	transition: box-shadow 0.2s, transform 0.2s;
+	overflow: hidden;
+}
+
+.card:hover {
+	box-shadow: var(--shadow-md);
+	transform: translateY(-3px);
+}
+
+.card a {
+	display: block;
+	text-decoration: none;
+	height: 100%;
+}
+
+.card-body {
+	padding: 1.5em;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.card-title {
+	font-family: var(--font-serif);
+	font-size: 1em;
+	color: var(--green-dark);
+	line-height: 1.5;
+	margin: 0 0 0.8em;
+	font-weight: 700;
+	/* 最多显示3行 */
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.card-desc {
+	font-size: 0.85em;
+	color: rgb(var(--ink-light));
+	line-height: 1.6;
+	flex: 1;
+	margin: 0 0 1em;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.card-read {
+	font-size: 0.85em;
+	color: var(--gold);
+	font-weight: 500;
+}
+
+/* ── 关于作者条 ── */
+.about-strip {
+	background: var(--paper-dark);
+	padding: 3.5em 0;
+}
+
+.about-inner {
+	max-width: 720px;
+}
+
+.about-label {
+	font-size: 0.8em;
+	letter-spacing: 0.15em;
+	color: var(--gold);
+	text-transform: uppercase;
+	margin-bottom: 0.8em;
+}
+
+.about-bio {
+	font-size: 1.05em;
+	line-height: 1.9;
+	color: rgb(var(--ink));
+	margin-bottom: 1.5em;
+}
+
+/* ── 全部文章列表 ── */
+.all-posts {
+	padding: 3em 0 4em;
+	background: var(--paper);
+}
+
+.post-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.post-item {
+	border-bottom: 1px solid var(--paper-dark);
+}
+
+.post-item a {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2em;
+	padding: 1.1em 0;
+	text-decoration: none;
+	transition: background 0.15s;
+}
+
+.post-item a:hover .post-title {
+	color: var(--green-mid);
+}
+
+.post-title {
+	font-family: var(--font-serif);
+	font-size: 1em;
+	font-weight: 700;
+	color: var(--green-dark);
+	line-height: 1.5;
+}
+
+.post-desc {
+	font-size: 0.85em;
+	color: rgb(var(--ink-light));
+	line-height: 1.5;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+/* ── 响应式 ── */
+@media (max-width: 900px) {
+	.cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 600px) {
+	.hero {
+		padding: 3.5em 1em 3em;
+	}
+
+	.cards {
+		grid-template-columns: 1fr;
+	}
+
+	.section-inner {
+		padding: 0 1em;
+	}
+}
+</style>
