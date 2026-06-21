@@ -4,12 +4,7 @@ description: '6岁学中医、16岁替父行针，中医世家的陈胜却主动
 pubDate: '2026-05-12'
 ---
 
-不管中西医，治得好、看得见效果，家传+西医背景的陈胜医师说：这才是关键！ \* body .\_\_page\_content\_\_ .title .\_\_meta\_\_ .\_\_meta\_\_ .nick\_name .\_\_meta\_\_ .copyright blockquote.source blockquote.source a .item\_show\_type\_0 > section a .text\_content .picture\_content .picture\_item .picture\_content .picture\_item .picture\_item\_label img .pay\_subscribe\_notice .pay\_subscribe\_badge .pay\_subscribe\_desc .pay\_subscribe\_hint .\_\_bottom-bar\_\_ .\_\_bottom-bar\_\_ .left .\_\_bottom-bar\_\_ .right .\_\_bottom-bar\_\_ .sns\_opr\_btn .\_\_bottom-bar\_\_ .sns\_opr\_btn:not(:last-child) .\_\_bottom-bar\_\_ .sns\_opr\_btn > img 
-
 不管中西医，治得好、看得见效果，家传+西医背景的陈胜医师说：这才是关键！
-====================================
-
-
 
 ![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/BDDBmFtJlKGuCUJlnoya6SZQ195rQESY3dcbwohkHBHYfOLDoaibYdJiaMaqgZaN5z2HDHYfyEHGCHFeC6NdCTCdOwiaVpLvJuicrDQ10iaibciaCI/640?wx_fmt=jpeg&from=appmsg)
 
