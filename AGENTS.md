@@ -38,7 +38,12 @@ Requires Node >= 22.12.0 (see `package.json` engines).
 - ICP filing: materials submitted, server 1.14.70.145 (Tencent Cloud, 2-core 2GB) purchased to satisfy ICP requirement; site itself is hosted on Makers, not this server.
 
 ## Content & author voice
-The blog is a collection of 中文 long-form profiles of "青年中医" (young TCM doctors), written by one media author (禹畅). When writing/editing posts, match this established voice:
+The blog has two content categories, all written by one media author (禹畅):
+
+1. **青年中医采访** — long-form profiles of young TCM doctors. These follow the established style below.
+2. **中医育儿/健康科普** — health science articles on TCM parenting, pediatric health, medical risk analysis. These explain concepts in plain Chinese, often debunking popular misconceptions with evidence (cited studies, guidelines from authoritative bodies like 中华医学会). They do NOT follow the interview profile arc but share the same brand voice (stance-driven, no neutral reporting, slogan lines).
+
+When writing/editing posts, match this established voice:
 - **Stance-driven, not neutral reporting.** Recurring thesis: 明医 over 名医, 疗效 over 流量, 青年医生 over 体制内老专家. `why-write-young-doctors.md` is the author's manifesto — every interview argues this case.
 - **Slogan/aphorism style.** Short, parallel, often rhymed lines, frequently bolded on their own line (e.g. "降价能买来流量，买不来信任"; "方不大，效实在；针不多，见效快").
 - **Case-bombardment opening.** Lead with a rapid list of cure results (X付药治好…), then pivot to the doctor's backstory.
@@ -51,7 +56,11 @@ The blog is a collection of 中文 long-form profiles of "青年中医" (young T
   - Concrete "几付药治好某病" phrasing carries 医疗广告合规 risk — flag, don't silently amplify.
   - Never promote a specific clinic, hospital, or health platform by name. If the source article contains such placement (e.g. "base上海的某高管帮他推荐了某医馆"), remove it entirely — the patient's path to the doctor is their own business.
   - Keep promotional tone weak. Avoid marketing-style superlatives ("奇迹""神仙""一手治愈"), celebrity-endorsement framing, and clickbait titles. Write as journalism, not advertorial.
-  - When adapting content from other platforms, strip their branding and promotional language; retain only the doctor's story, clinical thinking, and verifiable facts.
+  - When adapting content from other platforms, strip their branding and promotional language; retain only the doctor's story, clinical thinking, and verifiable facts. This applies even when the author is republishing their own content from another platform.
+- **科普文章特别合规：**
+  - 引用权威来源（《柳叶刀》、中华医学会指南等）增强可信度，避免"据专家说"等模糊引用。
+  - 批评某种疗法/产品时，基于公开文献和指南，不点名攻击具体品牌或机构。
+  - 口语化表达（"哦""呢""呀"）允许在科普中使用，以拉近和读者距离；但不能滑向贩卖焦虑或制造对立。"选XX还是选健康"这类人为制造二分法的写法需避免。
 - **Cross-promotion:** every article bottom must include a "禹畅也写亲子教育" section (below `.contact-block` in `BlogPost.astro`) with the WeChat QR code at `/lazy_mom_qrcode.jpg` and text linking to the author's other public account 懒妈熊娃的科普笔记. The About page also mentions this account.
 
 ## Repo-specific gotchas
