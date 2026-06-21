@@ -53,6 +53,12 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 						<p>或者你是一位有疗效、却缺少传播渠道的青年中医，欢迎联系我。</p>
 						<p class="phone">微信 / 电话：13515813188</p>
 					</div>
+
+					<div class="cross-promo">
+						<h3>禹畅也写亲子教育</h3>
+						<img src="/lazy_mom_qrcode.jpg" alt="懒妈熊娃的科普笔记" width="160" height="160" loading="lazy" />
+						<p>关注微信公众号「懒妈熊娃的科普笔记」<br />用跨学科思维做家庭启蒙</p>
+					</div>
 				</div>
 			</article>
 		</main>
@@ -184,6 +190,34 @@ main {
 
 .article-body :global(hr) {
 	margin: 2.5em 0;
+}
+
+.cross-promo {
+	background: var(--paper-dark);
+	border: 2px solid var(--gold);
+	border-radius: var(--radius-lg);
+	padding: 1.5em;
+	margin: 2em 0 1em;
+	text-align: center;
+}
+
+.cross-promo h3 {
+	font-family: var(--font-serif);
+	color: var(--green-dark);
+	font-size: 1.15em;
+	margin: 0 0 1em;
+}
+
+.cross-promo img {
+	border-radius: var(--radius);
+	margin-bottom: 0.8em;
+}
+
+.cross-promo p {
+	font-size: 0.9em;
+	color: rgb(var(--ink-mid));
+	margin: 0;
+	line-height: 1.7;
 }
 
 @media (max-width: 600px) {

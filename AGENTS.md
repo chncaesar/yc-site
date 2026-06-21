@@ -52,6 +52,7 @@ The blog is a collection of 中文 long-form profiles of "青年中医" (young T
   - Never promote a specific clinic, hospital, or health platform by name. If the source article contains such placement (e.g. "base上海的某高管帮他推荐了某医馆"), remove it entirely — the patient's path to the doctor is their own business.
   - Keep promotional tone weak. Avoid marketing-style superlatives ("奇迹""神仙""一手治愈"), celebrity-endorsement framing, and clickbait titles. Write as journalism, not advertorial.
   - When adapting content from other platforms, strip their branding and promotional language; retain only the doctor's story, clinical thinking, and verifiable facts.
+- **Cross-promotion:** every article bottom must include a "禹畅也写亲子教育" section (below `.contact-block` in `BlogPost.astro`) with the WeChat QR code at `/lazy_mom_qrcode.jpg` and text linking to the author's other public account 懒妈熊娃的科普笔记. The About page also mentions this account.
 
 ## Repo-specific gotchas
 - `astro.config.mjs` `site` is still the placeholder `https://example.com` — see Pending section above.
