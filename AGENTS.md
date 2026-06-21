@@ -46,7 +46,12 @@ The blog is a collection of 中文 long-form profiles of "青年中医" (young T
 - **Fixed profile arc:** 童年/师承 → 出走体制 → 临床特色（用药精简、针到病除）→ 不追流量的医德 → 升华到行业意义.
 - **Classical allusions** sprinkled in (扁鹊见蔡桓公, 习得性无助, 巴别塔) to add cultural weight.
 - Formatting convention for these posts: title lives in frontmatter `title` (rendered as h1 by the layout — do not repeat it in the body); section headers use `##`/`###`; pinyin slug filenames; `description` distilled from the first paragraph.
-- **Caveat:** efficacy claims come from doctor/patient self-report, not third-party verification. Concrete "几付药治好某病" phrasing carries 医疗广告合规 risk for a public site — flag, don't silently amplify.
+- **Editorial compliance (中国大陆发布):**
+  - Efficacy claims must be attributed to doctor/patient self-report, never stated as fact by the author. Use "据张医生说""患者反馈" framing, not "张医生治好了XX病".
+  - Concrete "几付药治好某病" phrasing carries 医疗广告合规 risk — flag, don't silently amplify.
+  - Never promote a specific clinic, hospital, or health platform by name. If the source article contains such placement (e.g. "base上海的某高管帮他推荐了某医馆"), remove it entirely — the patient's path to the doctor is their own business.
+  - Keep promotional tone weak. Avoid marketing-style superlatives ("奇迹""神仙""一手治愈"), celebrity-endorsement framing, and clickbait titles. Write as journalism, not advertorial.
+  - When adapting content from other platforms, strip their branding and promotional language; retain only the doctor's story, clinical thinking, and verifiable facts.
 
 ## Repo-specific gotchas
 - `astro.config.mjs` `site` is still the placeholder `https://example.com` — see Pending section above.
