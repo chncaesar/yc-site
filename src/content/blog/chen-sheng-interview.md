@@ -1,0 +1,352 @@
+---
+title: '不管中西医，治得好、看得见效果——专访陈胜医师'
+description: '6岁学中医、16岁替父行针，中医世家的陈胜却主动拥抱西医。他坚信中医治本，更坚持用现代医学指标验证疗效——症状消失不算好，病理修复才是治愈标准。'
+pubDate: '2026-05-12'
+---
+
+不管中西医，治得好、看得见效果，家传+西医背景的陈胜医师说：这才是关键！ \* body .\_\_page\_content\_\_ .title .\_\_meta\_\_ .\_\_meta\_\_ .nick\_name .\_\_meta\_\_ .copyright blockquote.source blockquote.source a .item\_show\_type\_0 > section a .text\_content .picture\_content .picture\_item .picture\_content .picture\_item .picture\_item\_label img .pay\_subscribe\_notice .pay\_subscribe\_badge .pay\_subscribe\_desc .pay\_subscribe\_hint .\_\_bottom-bar\_\_ .\_\_bottom-bar\_\_ .left .\_\_bottom-bar\_\_ .right .\_\_bottom-bar\_\_ .sns\_opr\_btn .\_\_bottom-bar\_\_ .sns\_opr\_btn:not(:last-child) .\_\_bottom-bar\_\_ .sns\_opr\_btn > img 
+
+不管中西医，治得好、看得见效果，家传+西医背景的陈胜医师说：这才是关键！
+====================================
+
+
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/BDDBmFtJlKGuCUJlnoya6SZQ195rQESY3dcbwohkHBHYfOLDoaibYdJiaMaqgZaN5z2HDHYfyEHGCHFeC6NdCTCdOwiaVpLvJuicrDQ10iaibciaCI/640?wx_fmt=jpeg&from=appmsg)
+
+陈胜医师的问诊，和很多中医不太一样。他一边把脉，一边会指着化验单跟病人说：“你看转氨酶下来了，肝脏炎症真的在好转，不是不疼就算好了。”
+
+中医世家、原工作于解放军总医院第五医学中心医师、师从陕西名中医孙曼之先生，陈胜医师的行医路走得很 “另类”。
+
+6 岁学中医、16 岁能替父行针的他，没有困在传统框架里，反而主动拥抱现代医学，大学选了西医，毕业后先进入西医体系。
+
+他坚信中医能治本，更坚持用现代医学指标来评判疗效。
+
+行医多年专挑“硬骨头”啃——擅长器质性病变、结节、肿瘤相关调理，专攻反复难愈的慢性病，也深耕失眠、焦虑、抑郁等身心同调问题。
+
+“古人没有血压计、胃镜、影像检查，看不见体内微观病变，只能以消除症状为治愈标准。
+
+但那是时代的局限，不该成为中医的天花板。”
+
+## NO.1
+
+**家传筑基**
+
+**却先做了西医** 
+
+陈胜医师的中医启蒙极早：
+
+6 岁背医书、学针灸，
+
+慢慢给自己和家人治病，
+
+少年时就对《伤寒论》的结构提出了自己的见解。 
+“**16岁开始**，我爸一忙，病人来了就让我在边上替他扎针，效果还特别好。
+
+现在想，应该是少时起练功，对‘气’的感知很敏锐。”
+
+按常理，家传中医多半会走纯传统路线。
+
+但他父亲极有远见：“你还用去学院里学中医吗？去学西医，而且要学最讲原理的基础医学，拓宽自己的认知边界。”
+
+这句话，决定了他此后的整个格局。
+
+“临床医学教的是怎么用药、怎么手术；
+
+**基础医学教的是为什么：**
+
+转氨酶为什么高？免疫为什么乱？
+
+指标背后的代谢、微生物、病理机制，
+
+这才是才是西医的根”
+
+这段学习，让陈胜医师多了一双 “透视眼”。
+
+**他能读懂每一个数字，**
+
+**看懂微观病变，**
+
+**再把现代检测和中医宏观理论打通。**
+
+“谁说中西医对立？
+
+现代设备就是中医望诊的延伸。
+
+古人看不见的胃炎、溃疡，
+
+我们胃镜一看便知
+
+这是进步，不是冲突。”
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/BDDBmFtJlKHOoVaC444Xqb39EEuysbZooUmnS2uSFgxyXUCw4lzCYEnmyLbZMejtZZyx2ys5TfO3IGezibSJCeg1VEHic1SLE6icErzemneqM0/640?wx_fmt=jpeg&from=appmsg)
+
+陈胜医师和陕西名老中医赵曼之先生
+
+药简力宏，传道授业，行医治学皆与恩师一脉相承
+
+## NO.2
+
+**重新定义 “治愈”：**
+
+**不疼不算好，病理修复才是**
+
+“古代没有高血压概念，没有胃癌概念，只能以症状消失为标准。但今天不行。”
+
+陈胜医师一语点破传统中医受质疑最多的地方：
+
+\-胃不疼了，不代表胃炎好了；
+
+\-头不晕了，不代表血压就正常了；
+
+\-很多无症状的萎缩性胃炎，正悄悄往胃癌发展。
+
+他由此提出**现代中医的治愈新标准**： 
+
+**不仅消除症状，**
+
+**更要用检查证实：**
+
+**实质性病理损伤****已经修复。**
+
+![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4ZzRJdbKacf8ibRIdxdViaVQFyNAnJTse17tRTzomTOjkfBOlOJ11bd8StWKzlOcVd8VOpiaFVfISibzxlIze1OoWDic6LsP2TmFyRmO9YYqIhKNg/640?wx_fmt=svg&from=appmsg)
+
+“我治病一定让病人定期复查，
+
+用客观检查结果印证体内变化——
+
+**指标正常、病变修复、症状消失，**
+
+三样都好，才叫真正治好。”
+
+拒绝 “凭感觉看病、含糊其辞”。
+
+## NO.3
+
+**用 “宏观调微观”：**
+
+**一语道破中西医差异**
+
+当下中医圈，神化把脉、炒作五运六气、表演式诊疗甚嚣尘上。陈胜医师始终保持清醒。
+
+他提出**形气神三位一体**：
+
+\-形：身体物质载体（脏腑、组织、细胞）
+
+\-气：生命能量与空间状态
+
+\-神：情志、意识、生命主宰
+
+**西医擅长微观攻坚：**
+
+细菌、病毒、分子、细胞； 
+**中医擅长宏观调衡：**
+
+整体内环境、气机、空间、神志。
+
+陈胜医师用一个最通俗的比喻，讲透中西医差异：
+
+如果只盯着细菌、细胞、分子去治病， 
+就像一个人想掀翻桌子，
+
+却死抠一颗螺丝，再用力也掀不动，
+
+事倍功半。
+
+中医从气、神宏观调整，
+
+就像一群人合力掀桌， 
+整体一变，微观自愈系统启动，
+
+炎症消退、细胞修复，病自然根除
+
+**用现代人听得懂的逻辑**
+
+**讲 “气”，他说：**
+
+•「站桩、含胸拔背，不是玄功，
+
+是打开身体空间，让气能流动、能藏得住；
+
+• 经络不是虚无，是组织间隙的通路，
+
+路通了，免疫细胞和气血才能到达病灶；
+
+• 针灸没有神秘补泻，只是疏通、开路、给气腾空间，让身体自己修复。」
+
+对时下大热的五运六气，他也客观清醒： 
+“古代靠天吃饭的大环境适用；
+
+现代人空调、作息、环境全是人为干预的小环境，再一味刻板推演，容易脱离临床。”
+
+## NO.4
+
+**恪守边界：不夸大、不延误，**
+
+**做 “能治病” 的中医**
+
+在浮躁的行业里，陈胜医师始终守着清晰底线： 
+医疗的核心是治病，做治疗，不做流量养生。
+
+他主动迎接挑战：
+
+• 器质性病变、结节、肿瘤相关调理
+
+• 反复难愈的慢性病
+
+• 失眠、焦虑、抑郁等身心同调问题
+
+他更有医者良知，有边界，不夸大、不延误：
+
+**• 急症、高危、该手术的，先手术，**
+
+**不耽误最佳时机；**
+
+**• 术后用中医固本、通气、调体质，**
+
+**降低复发；**
+
+![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM45vlKsOIMsy972Rd9WiccGaAp08pNBSvEHBdNvFPMaviaQQ2NZsiaB98u4BW5IgMf9FQPJXo0poQ0llT1jTscx4IBx6K543q3esDicbeniblXMJHw/640?wx_fmt=svg&from=appmsg)
+
+中医和西医是互补，不是对立，更不是替代。
+
+“现在很多病，一半在身，一半在心。
+
+失眠、抑郁、结节、慢病，很多根源是情志不通、气机郁滞。未来中医真正的高地，是身心同调的整体医学。”
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/BDDBmFtJlKGglJeLPMLNrWYpxic8xJMa66iaDn3sCnFYxh55uvdt5THy5ndvae4vJb7e44Ttj3kaWVNVV0ZtTssPGXIPC7WRg5JiaN4wgbFZWQ/640?wx_fmt=jpeg&from=appmsg)
+
+## NO.5
+
+**疗效**
+
+**治得好、看得见才是关键！**
+
+![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM4D1Yl4bFnichmBm5evMGA9Q8lLdKApcmyXR4LvRWm0lFetbPZchHaNOzwQpvgSGticia7aGGvTFwiaJtuaKxa9YI6U84cLOZ1PibaJkmiasbY4wHBw/640?wx_fmt=svg&from=appmsg)
+
+“老百姓不在乎中西之争，只在乎能不能治得好、说得通、看得见。”
+
+**他不讲晦涩术语，**
+
+**只用现代语言 + 检验指标 + 真实疗效说话。**
+
+陈胜医师说，他接触的西医同行也都看疗效说话，指标降下去，影像学上看得到变化，他们都服气的。
+
+他的诊室里，每天都在上演“用疗效打破偏见”的故事——
+
+“原来中医真能治病，化验单骗不了人。”
+
+“以前中医说我‘肝郁气滞’，我听不懂；陈医生说‘气堵成疙瘩’，我一下就明白了。
+
+你再看这B超报告，容不得你不信。”
+
+“高血压停药了，连续1年测血压都正常的！”
+
+但他也看到，现实中"很多人一身毛病，去医院各个科室跑遍了，也不知道该从哪治起。"
+
+这也让他下定决心，要推动中医进家庭，让普通人也能掌握基本的中医理念和自救技能。
+
+**干货课程，让更多人受益**
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/BDDBmFtJlKHMM3ETqoAEKglz3dZndZR63FIiaVXPIjHpvlzB37YibBCRxPbJysx8icCFZhOwaIfqjhRkPgT9Ne5WHwtx2iamVUGTyicXW1xdJEn8/640?wx_fmt=jpeg&from=appmsg)
+
+**开课教学，**
+
+**推出各种层级的课程**
+
+**实用针灸心法体验课**：从最基础的 "气" 讲起，引导学员亲身体会气的存在；
+
+**古法太乙针灸基础班**：不教死记硬背穴位，而是教核心思维和心法，让学员能灵活用针。
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/BDDBmFtJlKFbROiaRKVAaWMt3PqFlDuMricHXxXHDGEuOhnbz0CnTpangjLz3IoML6oITrjDiaxj2tE40BqItU1VJyfTUmdPJBdhn2tu6FTmAM/640?wx_fmt=jpeg&from=appmsg)
+
+![](https://mmbiz.qpic.cn/mmbiz_svg/Q3auHgzwzM67eNPI4ezuSMhFd7NkSh9E1bQxFD9s3ZDdp2VHrMoM45iacqdC3WicC7tSibHdqlOQo3vpvvnHWPSqdibl9iaOhahazLlAq1AcADkz9ZTwKTHxWqw/640?wx_fmt=svg&from=appmsg)
+
+"想让更多人受益于中医，
+
+更关键的是广大接受现代教育、因不理解而对中医有偏见的群体。
+
+我要做的，
+
+就是用他们能听懂的语言，
+
+把中医的道理讲清楚"。
+
+他更愿意教年轻人：
+
+“他们是中医的未来，
+
+种下一颗科学、理性、融合的种子，
+
+比什么都重要。”
+
+**实用课**
+
+## NO.6
+
+**用双指标评估为中医正名：**
+
+**创新，是为了更好地守正**
+
+• 阴阳五行只是一种时代背景下的
+
+说理工具，不是核心；
+
+用现代语言解释，用现代评估验证，
+
+中医才能真正走向大众、走向世界。
+
+“我是古中医学的研究者与践行者，坚持中医与现代医学双指标评估，多维度验证古中医理论的有效性，就是为了给患者一个**看得见、摸得着、能放心**的疗效交待”陈胜医生说。
+
+而此外，他始终坚持：除了验证环节使用现代医学外，诊疗全程均遵循古中医学思维，不西化、不偏离、不妥协。
+
+他认为用双指标验证，只会让中医的路走得更宽，更能兼收并蓄。 
+
+“今天的中医，不可能再回到‘纯粹’的古中医时代了。拒绝现代生命科学的研究成果，就等于阻断了中医未来的发展之路。
+
+用现代语言解释，用现代评估验证，
+
+中医才能真正走向大众、走向世界。
+
+![](https://mmbiz.qpic.cn/sz_mmbiz_jpg/BDDBmFtJlKE7picUdeq4DOsfk1KqrllzDQ4qo49kn3wBcd5osl3FZE7N4tHoOx1a70Lk9hh15koTNIicibHZabZxS3ibH6tM1YEnB2IL8sOWH1Q/640?wx_fmt=jpeg&from=appmsg)
+
+临床效果好，实用性强，中西医功底扎实 说理透辟
+
+陈胜医生的课程广受欢迎，
+
+"原来中医是这样的！"很多学生这样感慨
+
+2026年5月
+
+**后记**
+
+44 年前，钱学森院士就大胆预言：
+
+“医学的前途在于中医现代化，
+
+西医最终也要走到中医的道路上来。” 
+
+他直指西医的根本缺陷是还原论的 “分割思维”，把完整的人拆成细胞、分子；
+
+而中医的核心是系统整体观，这恰恰是现代科学 “系统时代” 的终极方向。
+
+作为钱老理论的忠实拥趸，陈胜医师正走在这条被科学预言照亮的路上：
+
+以古中医为根本，以现代评估为证，用双指标体系为中医正名。
+
+从钱学森的理论指引，
+
+到汤钊猷院士 “中国新医学” 的顶层设计，
+
+再到陈胜医师临床一线的踏实落地，
+
+一条守正创新的中医之路已然清晰。
+
+这，是以陈胜医师为代表的
+
+中医“后浪”们的使命，
+
+也是千年中医走向未来的真正力量！
+
+![](http://mmbiz.qpic.cn/mmbiz_png/BDDBmFtJlKFMmvYwnkUT8ctPyfJ4m8hxhtNSqqDSDdCQGsmevbLo33q04QL3jiaSZ46Pwf5LsGfwZX1sb22UqT9L8CTywKxL23UjpiajNeiaD0/0?wx_fmt=png) 懒妈熊娃的科普笔记
+
+ ![](data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3C!-- Icon from Lucide by Lucide Contributors - https://github.com/lucide-icons/lucide/blob/main/LICENSE --%3E%3Cg fill='none' stroke='%23888888' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath d='M2.062 12.348a1 1 0 0 1 0-.696a10.75 10.75 0 0 1 19.876 0a1 1 0 0 1 0 .696a10.75 10.75 0 0 1-19.876 0'/%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3C/g%3E%3C/svg%3E) 阅读![](data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16.154 6.797l-.177 2.758h4.009c1.346 0 2.359 1.385 2.155 2.763l-.026.148-1.429 6.743c-.212.993-1.02 1.713-1.977 1.783l-.152.006-13.707-.006c-.553 0-1-.448-1-1v-8.58a1 1 0 0 1 1-1h2.44l1.263-.03.417-.018.168-.015.028-.005c1.355-.315 2.39-2.406 2.58-4.276l.01-.16.022-.572.022-.276c.074-.707.3-1.54 1.08-1.883 2.054-.9 3.387 1.835 3.274 3.62zm-2.791-2.52c-.16.07-.282.294-.345.713l-.022.167-.019.224-.023.604-.014.204c-.253 2.486-1.615 4.885-3.502 5.324l-.097.018-.204.023-.181.012-.256.01v8.218l9.813.004.11-.003c.381-.028.72-.304.855-.709l.034-.125 1.422-6.708.02-.11c.099-.668-.354-1.308-.87-1.381l-.098-.007h-5.289l.26-4.033c.09-1.449-.864-2.766-1.594-2.446zM7.5 11.606l-.21.005-2.241-.001v8.181l2.45.001v-8.186z' fill='%23000'/%3E%3C/svg%3E) 赞 ![](data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E %3Cg fill='none' fill-rule='evenodd'%3E %3Cpath d='M0 0h24v24H0z'/%3E %3Cpath fill='%23576B95' d='M13.707 3.288l7.171 7.103a1 1 0 0 1 .09 1.32l-.09.1-7.17 7.104a1 1 0 0 1-1.705-.71v-3.283c-2.338.188-5.752 1.57-7.527 5.9-.295.72-1.02.713-1.177-.22-1.246-7.38 2.952-12.387 8.704-13.294v-3.31a1 1 0 0 1 1.704-.71zm-.504 5.046l-1.013.16c-4.825.76-7.976 4.52-7.907 9.759l.007.287c1.594-2.613 4.268-4.45 7.332-4.787l1.581-.132v4.103l6.688-6.623-6.688-6.623v3.856z'/%3E %3C/g%3E%3C/svg%3E) 分享 ![](data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'%3E %3Cdefs%3E %3Cpath id='a62bde5b-af55-42c8-87f2-e10e8a48baa0-a' d='M0 0h24v24H0z'/%3E %3C/defs%3E %3Cg fill='none' fill-rule='evenodd'%3E %3Cmask id='a62bde5b-af55-42c8-87f2-e10e8a48baa0-b' fill='%23fff'%3E %3Cuse xlink:href='%23a62bde5b-af55-42c8-87f2-e10e8a48baa0-a'/%3E %3C/mask%3E %3Cg mask='url(%23a62bde5b-af55-42c8-87f2-e10e8a48baa0-b)'%3E %3Cg transform='translate(0 -2.349)'%3E %3Cpath d='M0 2.349h24v24H0z'/%3E %3Cpath fill='%23576B95' d='M16.45 7.68c-.954 0-1.94.362-2.77 1.113l-1.676 1.676-1.853-1.838a3.787 3.787 0 0 0-2.63-.971 3.785 3.785 0 0 0-2.596 1.112 3.786 3.786 0 0 0-1.113 2.687c0 .97.368 1.938 1.105 2.679l7.082 6.527 7.226-6.678a3.787 3.787 0 0 0 .962-2.618 3.785 3.785 0 0 0-1.112-2.597A3.687 3.687 0 0 0 16.45 7.68zm3.473.243a4.985 4.985 0 0 1 1.464 3.418 4.98 4.98 0 0 1-1.29 3.47l-.017.02-7.47 6.903a.9.9 0 0 1-1.22 0l-7.305-6.73-.008-.01a4.986 4.986 0 0 1-1.465-3.535c0-1.279.488-2.56 1.465-3.536A4.985 4.985 0 0 1 7.494 6.46c1.24-.029 2.49.4 3.472 1.29l.01.01L12 8.774l.851-.85.01-.01c1.046-.951 2.322-1.434 3.59-1.434 1.273 0 2.52.49 3.472 1.442z'/%3E %3C/g%3E %3C/g%3E %3C/g%3E%3C/svg%3E) 推荐 ![](data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.242 7a2.5 2.5 0 0 0-2.5-2.5h-14a2.5 2.5 0 0 0-2.5 2.5v8.5a2.5 2.5 0 0 0 2.5 2.5h2.5v1.59a1 1 0 0 0 1.707.7l1-1a.569.569 0 0 0 .034-.03l1.273-1.273a.6.6 0 0 0-.8-.892v-.006L9.441 19.1l.001-2.3h-3.7l-.133-.007A1.3 1.3 0 0 1 4.442 15.5V7l.007-.133A1.3 1.3 0 0 1 5.742 5.7h14l.133.007A1.3 1.3 0 0 1 21.042 7v4.887a.6.6 0 1 0 1.2 0V7z' fill='%23000' fill-opacity='.9'/%3E%3Crect x='14.625' y='16.686' width='7' height='1.2' rx='.6' fill='%23000' fill-opacity='.9'/%3E%3Crect x='18.725' y='13.786' width='7' height='1.2' rx='.6' transform='rotate(90 18.725 13.786)' fill='%23000' fill-opacity='.9'/%3E%3C/svg%3E) 留言
