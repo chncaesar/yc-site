@@ -58,3 +58,4 @@ The blog is a collection of 中文 long-form profiles of "青年中医" (young T
 - `.astro/` (generated types) and `dist/` are git-ignored; the `astro:content` virtual module types come from there, so run a build/sync if type imports look broken.
 - No GitHub Actions workflows — CD is handled entirely by Makers git integration.
 - OG/Twitter meta intentionally absent — domestic Chinese site, those tags have no effect.
+- **After adding or editing any post:** review the full site for SEO — check that `<title>` format is correct (no duplication), all pages have unique `description` meta, sitemap regenerated, no broken internal links, and article slugs are clean pinyin.
