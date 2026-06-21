@@ -4,8 +4,6 @@ description: '20位分享者，2天高密度干货碰撞：临床心得、公益
 pubDate: '2026-01-16'
 ---
 
-![中医萝卜会2025年会](https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/tcm-radish-conf/00-523d4fce.png)
-
 **编者按：** 杭州萝卜会的禹畅为本文作者，她有激情有执行力，文章不仅情绪饱满，还写得比我快。此外，还为嘉宾分享的内容配了漫画思维导图，赞一个。
 
 ---
