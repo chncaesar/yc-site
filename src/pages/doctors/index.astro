@@ -1,0 +1,221 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+
+const interviews = await getCollection('interview');
+const doctors = interviews
+	.filter((post) => post.data.doctor)
+	.sort((a, b) => {
+		const cityA = a.data.doctor!.city === '需询问' ? 'zzz' : a.data.doctor!.city;
+		const cityB = b.data.doctor!.city === '需询问' ? 'zzz' : b.data.doctor!.city;
+		return cityA.localeCompare(cityB, 'zh') || a.data.doctor!.name.localeCompare(b.data.doctor!.name, 'zh');
+	});
+
+const jsonLd = JSON.stringify({
+	'@context': 'https://schema.org',
+	'@graph': doctors.map((post) => ({
+		'@type': 'Person',
+		'name': post.data.doctor!.name,
+		'jobTitle': '中医师',
+		'knowsAbout': post.data.doctor!.specialties,
+		'workLocation': {
+			'@type': 'Place',
+			'addressLocality': post.data.doctor!.city === '需询问' ? undefined : post.data.doctor!.city,
+		},
+		'url': new URL(`/interview/${post.id}/`, 'https://xn--doyx8g.com').href,
+	})),
+});
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead
+			title="找医生"
+			description="禹畅采访的青年中医名录——按城市和擅长方向快速定位，点击查看完整专访。"
+		/>
+		<script type="application/ld+json" set:html={jsonLd} />
+	</head>
+	<body>
+		<Header />
+
+		<div class="page-header">
+			<div class="page-header-inner">
+				<h1>找医生</h1>
+				<p>禹畅采访过的青年中医，有疗效、缺传播渠道的那批人。</p>
+			</div>
+		</div>
+
+		<main class="doctors-main">
+			<div class="table-wrap">
+				<table class="doctor-table">
+					<thead>
+						<tr>
+							<th>医生</th>
+							<th>城市</th>
+							<th>擅长方向</th>
+							<th>专访</th>
+						</tr>
+					</thead>
+					<tbody>
+						{doctors.map((post) => (
+							<tr>
+								<td class="doctor-name">{post.data.doctor!.name}</td>
+								<td class="doctor-city">{post.data.doctor!.city}</td>
+								<td class="doctor-specialties">
+									{post.data.doctor!.specialties.join('　')}
+								</td>
+								<td class="doctor-link">
+									<a href={`/interview/${post.id}/`}>查看专访 →</a>
+								</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
+			</div>
+
+			<div class="contact-cta">
+				<p>找不到合适的方向？或想了解更多细节？</p>
+				<p class="phone">联系禹畅：微信/电话 13515813188</p>
+			</div>
+		</main>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+.page-header {
+	background: var(--green-dark);
+	padding: 3em 1.5em 2.5em;
+}
+
+.page-header-inner {
+	max-width: var(--max-prose);
+	margin: 0 auto;
+}
+
+.page-header h1 {
+	font-family: var(--font-serif);
+	color: var(--gold);
+	font-size: 2em;
+	margin: 0 0 0.4em;
+}
+
+.page-header p {
+	color: rgba(247,243,236,0.7);
+	font-size: 0.95em;
+	margin: 0;
+	line-height: 1.7;
+}
+
+.doctors-main {
+	max-width: var(--max-wide);
+	margin: 0 auto;
+	padding: 3em 1.5em 5em;
+}
+
+.table-wrap {
+	overflow-x: auto;
+	margin-bottom: 3em;
+}
+
+.doctor-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 0.95em;
+}
+
+.doctor-table thead {
+	background: var(--green-dark);
+	color: var(--gold);
+}
+
+.doctor-table th {
+	font-family: var(--font-serif);
+	font-weight: 700;
+	padding: 0.8em 1em;
+	text-align: left;
+	letter-spacing: 0.05em;
+	white-space: nowrap;
+}
+
+.doctor-table td {
+	padding: 0.9em 1em;
+	border-bottom: 1px solid var(--paper-dark);
+	vertical-align: top;
+	line-height: 1.6;
+}
+
+.doctor-table tbody tr:hover {
+	background: rgba(201,168,76,0.05);
+}
+
+.doctor-name {
+	font-family: var(--font-serif);
+	font-weight: 700;
+	color: var(--green-dark);
+	white-space: nowrap;
+}
+
+.doctor-city {
+	color: rgb(var(--ink-mid));
+	white-space: nowrap;
+}
+
+.doctor-specialties {
+	color: rgb(var(--ink));
+	font-size: 0.9em;
+}
+
+.doctor-link a {
+	color: var(--gold);
+	text-decoration: none;
+	font-weight: 500;
+	white-space: nowrap;
+}
+
+.doctor-link a:hover {
+	color: var(--green-dark);
+}
+
+.contact-cta {
+	background: var(--green-dark);
+	color: var(--paper);
+	border-radius: var(--radius-lg);
+	padding: 2em;
+	text-align: center;
+}
+
+.contact-cta p {
+	color: rgba(247,243,236,0.8);
+	margin: 0 0 0.5em;
+	font-size: 0.95em;
+}
+
+.contact-cta .phone {
+	font-size: 1.2em;
+	font-weight: 700;
+	color: var(--white);
+	letter-spacing: 0.05em;
+	margin: 0;
+}
+
+@media (max-width: 600px) {
+	.page-header {
+		padding: 2.5em 1em 2em;
+	}
+
+	.doctors-main {
+		padding: 2em 1em 4em;
+	}
+
+	.doctor-table th,
+	.doctor-table td {
+		padding: 0.7em 0.6em;
+		font-size: 0.85em;
+	}
+}
+</style>
