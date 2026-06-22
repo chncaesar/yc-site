@@ -1,0 +1,73 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Header from '../../components/Header.astro';
+import { SITE_DESCRIPTION } from '../../consts';
+
+const interviews = await getCollection('interview');
+const healthPosts = await getCollection('health');
+const eventPosts = await getCollection('events');
+
+const allPosts = [...interviews, ...healthPosts, ...eventPosts].sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead title="文章" description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+
+		<div class="page-header">
+			<div class="page-header-inner">
+				<h1>全部文章</h1>
+				<p>青年中医专访 · 健康科普 · 行业动态</p>
+			</div>
+		</div>
+
+		<main class="blog-main">
+			<ul class="post-list">
+				{allPosts.map((post) => (
+					<li class="post-item">
+						<a href={`/${post.collection}/${post.id}/`}>
+							<div class="post-meta">
+								<FormattedDate date={post.data.pubDate} />
+								<span class="post-category"> · {post.collection === 'interview' ? '专访' : post.collection === 'health' ? '科普' : '动态'}</span>
+							</div>
+							<h2 class="post-title">{post.data.title}</h2>
+							<p class="post-desc">{post.data.description}</p>
+							<span class="post-read">阅读全文 →</span>
+						</a>
+					</li>
+				))}
+			</ul>
+		</main>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+.page-header { background: var(--green-dark); padding: 3em 1.5em 2.5em; }
+.page-header-inner { max-width: var(--max-prose); margin: 0 auto; }
+.page-header h1 { font-family: var(--font-serif); color: var(--gold); font-size: 2em; margin: 0 0 0.4em; }
+.page-header p { color: rgba(247,243,236,0.7); font-size: 0.95em; margin: 0; line-height: 1.7; }
+.blog-main { max-width: var(--max-prose); margin: 0 auto; padding: 3em 1em 4em; }
+.post-list { list-style: none; margin: 0; padding: 0; }
+.post-item { border-bottom: 1px solid var(--paper-dark); }
+.post-item:first-child { border-top: 1px solid var(--paper-dark); }
+.post-item a { display: block; padding: 1.8em 0; text-decoration: none; transition: padding-left 0.2s; }
+.post-item a:hover { padding-left: 0.5em; }
+.post-meta { font-size: 0.8em; color: rgb(var(--ink-light)); margin-bottom: 0.4em; letter-spacing: 0.03em; }
+.post-category { color: var(--gold); }
+.post-title { font-family: var(--font-serif); font-size: 1.2em; color: var(--green-dark); line-height: 1.5; margin: 0 0 0.6em; font-weight: 700; }
+.post-item a:hover .post-title { color: var(--green-mid); }
+.post-desc { font-size: 0.9em; color: rgb(var(--ink-mid)); line-height: 1.7; margin: 0 0 0.8em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.post-read { font-size: 0.85em; color: var(--gold); font-weight: 500; }
+@media (max-width: 600px) { .page-header { padding: 2.5em 1em 2em; } }
+</style>
