@@ -99,15 +99,15 @@ const otherFeatured = [...healthPosts, ...eventPosts]
 				<h2 class="section-title">主要内容领域</h2>
 				<dl class="topic-list">
 					<div class="topic-item">
-						<dt>青年中医专访</dt>
+						<dt><a href="/interview/">青年中医专访</a></dt>
 						<dd>全国青年中医的临床特色、医德与师承故事</dd>
 					</div>
 					<div class="topic-item">
-						<dt>中医育儿与健康科普</dt>
+						<dt><a href="/health/">中医育儿与健康科普</a></dt>
 						<dd>基于权威指南与临床实践的家庭健康决策参考</dd>
 					</div>
 					<div class="topic-item">
-						<dt>行业会议与现场报道</dt>
+						<dt><a href="/events/">行业会议与现场报道</a></dt>
 						<dd>中医行业活动记录、会议观察与一手报道</dd>
 					</div>
 				</dl>
@@ -383,6 +383,15 @@ const otherFeatured = [...healthPosts, ...eventPosts]
 	font-weight: 700;
 	color: var(--green-dark);
 	margin-bottom: 0.3em;
+}
+
+.topic-item dt a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.topic-item dt a:hover {
+	color: var(--gold);
 }
 
 .topic-item dd {
