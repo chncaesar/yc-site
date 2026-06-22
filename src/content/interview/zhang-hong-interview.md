@@ -2,7 +2,6 @@
 title: '被放弃的病人重见光明——专访中西医眼科张虹主任'
 description: '从事中西医结合眼科四十余年，张虹主任以针药并用治疗视神经萎缩等西医难题，让相当一部分"无药可医"的患者重获光明或生活自理能力。'
 pubDate: '2026-06-22'
-heroImage: 'https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/zhang-hong/cover.jpg'
 doctor:
   name: '张虹'
   city: '武汉'
@@ -12,8 +11,6 @@ doctor:
 张虹主任，武汉市中医医院主任医师、教授，硕士生导师，曾任中国医师协会眼科分会委员。从事中西医结合眼科临床四十余年，据张主任介绍，她擅长运用中西医结合方法诊疗眼科疾病，尤擅中药、针刺治疗眼病，同时借鉴现代医学发展成果，在中医眼科领域持续探索精进。
 
 ## 被放弃的病人，在这里看到希望
-
-![](https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/zhang-hong/img00.gif)
 
 某社交平台上，一位来自陕西安康的小周女士这样写道：
 
