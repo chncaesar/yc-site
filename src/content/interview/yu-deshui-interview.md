@@ -43,8 +43,6 @@ doctor:
 
 ## 触诊绝活
 
-![触诊示意](https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/yu-deshui/img06.jpg)
-
 于医生的触诊在患者圈里有口皆碑。以下三个案例均为患者自述：
 
 **头昏沉3年，CT未查出的寰椎位移**
@@ -61,13 +59,9 @@ doctor:
 
 ## 医患亦是朋友
 
-![医患互动](https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/yu-deshui/img07.png)
-
 治病上一丝不苟的于医生，私下里也是个逗趣的年轻人。据患者说，有这样的医生，才有这样调皮的患者和喜感的锦旗。
 
 于医生能教会患者自己在家搞定的，也会倾囊相授，说不用来找他——哪怕有些是他并不容易才讨教来的民间"绝技"。
-
-![舌底静脉取栓手法示意](https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/yu-deshui/img08.jpg)
 
 据于医生介绍，舌底静脉取栓是他常用的疗法之一。他对患者事无巨细地告知具体操作，说对头晕、头痛、头昏沉的缓解立竿见影。
 
@@ -77,18 +71,12 @@ doctor:
 
 于医生有一股子求真劲儿——不光要治好病人的病，道理也要想清楚、讲明白，这样才能在后面的临床中复现，才能传授他人，易于传播。
 
-![临床笔记与研究](https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/yu-deshui/img09.jpg)
-
 正如他讲述第一个镇痛医案时所说，没啥神奇的，道理很简单，就是用中医的"三分法"——腿膝盖痛，就扎与之对应的手肘、手腕等关节穴位镇痛。
 
 **将"神奇"讲明白了，才不会给"神棍"留下空间和发挥余地。**
 
 有很多民间中医的方法确实方便廉验，不少道医也有其安身立命的治病理论和手法。但如果只是各承家技，终始顺旧，医学如何发展？《伤寒论》序言中的话依旧振聋发聩。
 
-![学习与传承](https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/yu-deshui/img10.jpg)
-
 收起中医的门户之见、派别之争，兼收并蓄，**以自然为师，以患者为师**，方能在成为大医的大路上行稳致远。
 
 据于医生说，他的老师中不乏极有名望的名师，但他坚持以疗效说话，说自己还待沉淀。在这一点上，他有些执拗，也有些不同。
-
-![于得水医生近照](https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/yu-deshui/img11.jpg)
