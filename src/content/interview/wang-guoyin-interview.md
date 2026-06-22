@@ -3,6 +3,10 @@ title: '重度抑郁，停学两年，住院、电击…自残女孩如何在两
 description: '王国印博士认为80%以上青少年抑郁是"假性抑郁"、可治愈。他用"三步法"治郁症——先治躯体症状建立信任，再调心理，最后从家庭关系等根源入手，让不少孩子两个月重返校园。'
 pubDate: '2026-06-19'
 heroImage: 'https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/images/wang-guoyin-depression/img_00.jpg'
+doctor:
+  name: '王国印'
+  city: '上海'
+  specialties: ['青少年抑郁焦虑', '情志病', '失眠', '慢性心力衰竭']
 ---
 
 本期嘉宾 王国印，中医学博士、副主任医师。

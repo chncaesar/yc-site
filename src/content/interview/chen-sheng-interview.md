@@ -2,6 +2,10 @@
 title: '不管中西医，治得好、看得见效果——专访陈胜医师'
 description: '6岁学中医、16岁替父行针，中医世家的陈胜却主动拥抱西医。他坚信中医治本，更坚持用现代医学指标验证疗效——症状消失不算好，病理修复才是治愈标准。'
 pubDate: '2026-05-12'
+doctor:
+  name: '陈胜'
+  city: '需询问'
+  specialties: ['结节肿瘤调理', '慢性病', '失眠焦虑抑郁', '中西医结合']
 ---
 
 ![](https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/chen-sheng/00-058b6d26.jpg)

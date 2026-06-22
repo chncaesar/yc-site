@@ -2,6 +2,10 @@
 title: '术后瘫痪抬着来走着回——专访章炳炜章航父子'
 description: '南宋御医传人，900余年家学传承。章炳炜章航父子用祖传"雷火针"和针灸，让脑梗瘫痪半年的老人一次治疗后起身行走，从生死线上拉回多脏器转移的晚期癌症患者。'
 pubDate: '2025-01-16'
+doctor:
+  name: '章炳炜 · 章航'
+  city: '杭州'
+  specialties: ['中风偏瘫', '脑梗康复', '颈腰椎病', '雷火针']
 ---
 
 ![](https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/zhang-bingwei/00-e7d7bf06.png)
