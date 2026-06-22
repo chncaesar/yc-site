@@ -5,11 +5,23 @@ import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
-const allPosts = (await getCollection('blog')).sort(
+const interviews = (await getCollection('interview')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
-const featured = allPosts.slice(0, 3);
-const rest = allPosts.slice(3);
+const healthPosts = (await getCollection('health')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+const eventPosts = (await getCollection('events')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+const featuredInterviews = interviews.slice(0, 3);
+const otherFeatured = [...healthPosts, ...eventPosts]
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+	.slice(0, 3);
+const allPosts = [...interviews, ...healthPosts, ...eventPosts].sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+const rest = allPosts.slice(6);
 ---
 
 <!doctype html>
@@ -50,9 +62,29 @@ const rest = allPosts.slice(3);
 			<div class="section-inner">
 				<h2 class="section-title">近期专访</h2>
 				<ul class="cards">
-					{featured.map((post) => (
+					{featuredInterviews.map((post) => (
 						<li class="card">
-							<a href={`/blog/${post.id}/`}>
+							<a href={`/${post.collection}/${post.id}/`}>
+								<div class="card-body">
+									<h3 class="card-title">{post.data.title}</h3>
+									<p class="card-desc">{post.data.description}</p>
+									<span class="card-read">阅读全文 →</span>
+								</div>
+							</a>
+						</li>
+					))}
+				</ul>
+			</div>
+		</section>
+
+		<!-- 精选科普 & 动态 -->
+		<section class="featured-other">
+			<div class="section-inner">
+				<h2 class="section-title">健康科普 &amp; 行业动态</h2>
+				<ul class="cards">
+					{otherFeatured.map((post) => (
+						<li class="card">
+							<a href={`/${post.collection}/${post.id}/`}>
 								<div class="card-body">
 									<h3 class="card-title">{post.data.title}</h3>
 									<p class="card-desc">{post.data.description}</p>
@@ -103,7 +135,7 @@ const rest = allPosts.slice(3);
 					<ul class="post-list">
 						{rest.map((post) => (
 							<li class="post-item">
-								<a href={`/blog/${post.id}/`}>
+								<a href={`/${post.collection}/${post.id}/`}>
 									<span class="post-title">{post.data.title}</span>
 									<span class="post-desc">{post.data.description}</span>
 								</a>
@@ -441,5 +473,11 @@ const rest = allPosts.slice(3);
 	font-size: 0.95em;
 	color: rgb(var(--ink-mid));
 	line-height: 1.7;
+}
+
+/* ── 精选科普 & 动态 ── */
+.featured-other {
+	padding: 0 0 4em;
+	background: var(--paper);
 }
 </style>
