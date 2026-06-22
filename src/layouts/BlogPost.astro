@@ -15,6 +15,19 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 	<head>
 		<BaseHead title={title} description={description} />
+		<script type="application/ld+json" set:html={`{
+			"@context": "https://schema.org",
+			"@type": "Article",
+			"headline": ${JSON.stringify(title)},
+			"description": ${JSON.stringify(description)},
+			"datePublished": ${JSON.stringify(pubDate.toISOString())},
+			"dateModified": ${JSON.stringify((updatedDate ?? pubDate).toISOString())},
+			"author": {
+				"@type": "Person",
+				"name": "禹畅",
+				"url": "https://xn--doyx8g.com"
+			}
+		}`} />
 	</head>
 
 	<body>
