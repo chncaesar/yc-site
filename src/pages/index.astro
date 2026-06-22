@@ -16,6 +16,16 @@ const rest = allPosts.slice(3);
 <html lang="zh-CN">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"name": "禹畅",
+				"description": "长期专访青年中医的独立写作者，兼写中医育儿健康科普",
+				"url": "https://xn--doyx8g.com",
+				"knowsAbout": ["中医", "青年中医", "中医育儿", "健康科普"]
+			}
+		</script>
 	</head>
 	<body>
 		<Header />
@@ -25,10 +35,11 @@ const rest = allPosts.slice(3);
 			<div class="hero-inner">
 				<p class="hero-eyebrow">明医志 · 青年中医专访</p>
 				<h1>找到那个能<br />治好你的人</h1>
-				<p class="hero-sub">
-					行业里最会吆喝的人，往往不是最会治病的人。<br />
-					我写青年中医——投给疗效，不投给流量。
-				</p>
+			<p class="hero-sub">
+				禹畅，长期专访青年中医的独立写作者。<br />
+				行业里最会吆喝的人，往往不是最会治病的人。<br />
+				我只写有疗效的人。
+			</p>
 				<a href="/blog" class="btn">读文章</a>
 				<a href="/about" class="btn btn-outline">了解作者</a>
 			</div>
@@ -51,6 +62,23 @@ const rest = allPosts.slice(3);
 						</li>
 					))}
 				</ul>
+			</div>
+		</section>
+
+		<!-- 内容领域 -->
+		<section class="topics" id="topics">
+			<div class="section-inner">
+				<h2 class="section-title">主要内容领域</h2>
+				<dl class="topic-list">
+					<div class="topic-item">
+						<dt>青年中医专访</dt>
+						<dd>全国青年中医的临床特色、医德与师承故事</dd>
+					</div>
+					<div class="topic-item">
+						<dt>中医育儿与健康科普</dt>
+						<dd>基于权威指南与临床实践的家庭健康决策参考</dd>
+					</div>
+				</dl>
 			</div>
 		</section>
 
@@ -85,6 +113,27 @@ const rest = allPosts.slice(3);
 				</div>
 			</section>
 		)}
+
+		<!-- FAQ -->
+		<section class="faq" id="faq">
+			<div class="section-inner">
+				<h2 class="section-title">常见问题</h2>
+				<dl class="faq-list">
+					<div class="faq-item">
+						<dt>Q：这个网站主要写什么？</dt>
+						<dd>A：专访有疗效、缺传播渠道的青年中医，兼写中医育儿健康科普。</dd>
+					</div>
+					<div class="faq-item">
+						<dt>Q：作者是谁？</dt>
+						<dd>A：禹畅，原党报版面负责人，长期采访全国青年中医。</dd>
+					</div>
+					<div class="faq-item">
+						<dt>Q：内容是否持续更新？</dt>
+						<dd>A：是，长期更新。</dd>
+					</div>
+				</dl>
+			</div>
+		</section>
 
 		<Footer />
 	</body>
@@ -322,5 +371,75 @@ const rest = allPosts.slice(3);
 	.section-inner {
 		padding: 0 1em;
 	}
+}
+
+/* ── 内容领域 ── */
+.topics {
+	padding: 3.5em 0;
+	background: var(--paper);
+}
+
+.topic-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.topic-item {
+	margin-bottom: 1.5em;
+}
+
+.topic-item:last-child {
+	margin-bottom: 0;
+}
+
+.topic-item dt {
+	font-family: var(--font-serif);
+	font-size: 1.1em;
+	font-weight: 700;
+	color: var(--green-dark);
+	margin-bottom: 0.3em;
+}
+
+.topic-item dd {
+	margin: 0;
+	font-size: 0.95em;
+	color: rgb(var(--ink-mid));
+	line-height: 1.7;
+}
+
+/* ── FAQ ── */
+.faq {
+	padding: 3.5em 0 4em;
+	background: var(--paper-dark);
+}
+
+.faq-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.faq-item {
+	margin-bottom: 1.8em;
+}
+
+.faq-item:last-child {
+	margin-bottom: 0;
+}
+
+.faq-item dt {
+	font-family: var(--font-serif);
+	font-size: 1em;
+	font-weight: 700;
+	color: var(--green-dark);
+	margin-bottom: 0.3em;
+}
+
+.faq-item dd {
+	margin: 0;
+	font-size: 0.95em;
+	color: rgb(var(--ink-mid));
+	line-height: 1.7;
 }
 </style>
