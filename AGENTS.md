@@ -11,9 +11,9 @@ Astro 6 static blog，个人IP站「禹畅 · 明医志」。ESM-only, TypeScrip
 Requires Node >= 22.12.0 (see `package.json` engines).
 
 ## Architecture
-- Pages/routes: `src/pages/` — file-based routing. `blog/[...slug].astro` renders posts; `rss.xml.js` builds the feed; `index.astro` and `about.astro` are static pages.
-- Content: blog posts live in `src/content/blog/` as `.md`/`.mdx`. Frontmatter is schema-validated in `src/content.config.ts` (required `title`, `description`, `pubDate`; optional `updatedDate`, `heroImage`). Add/edit posts here, not in `src/pages`.
-- Read posts via `getCollection('blog')` (see `src/pages/blog/index.astro`, `rss.xml.js`).
+- Pages/routes: `src/pages/` — file-based routing. `interview/[...slug].astro`, `health/[...slug].astro`, `events/[...slug].astro` 渲染三类文章；`rss.xml.js` 生成 feed；`index.astro` 首页；`about.astro` 关于页；`doctors/index.astro` 医生名录；`articles/index.astro` 全部文章聚合页。
+- Content: 三个 collection — `src/content/interview/`（青年中医专访）、`src/content/health/`（健康科普）、`src/content/events/`（行业动态）。Frontmatter schema 在 `src/content.config.ts` 定义（required `title`, `description`, `pubDate`；optional `updatedDate`, `heroImage`, `doctor`）。interview 独有可选字段 `doctor: { name, city, specialties[] }`。
+- Read posts via `getCollection('interview')` / `getCollection('health')` / `getCollection('events')`。
 - Shared layout/components in `src/layouts/` and `src/components/`; global styles in `src/styles/global.css`.
 
 ## Design system
@@ -21,7 +21,7 @@ Requires Node >= 22.12.0 (see `package.json` engines).
 - Fonts: Noto Serif SC (headlines) + Noto Sans SC (body), loaded via Google Fonts in `global.css`
 - CSS variables defined in `:root` in `global.css` — always use variables, never hardcode colors
 - Key classes: `.btn`, `.btn-outline`, `.contact-block`, `.pullquote`, `.patient-quote`
-- Header: sticky, dark green background, gold site title; nav links: 文章 / 关于 / 联系
+- Header: sticky, dark green background, gold site title; nav links: 文章 / 专访 / 找医生 / 关于 / 联系
 - Footer: dark green, minimal — brand tagline + nav links + copyright
 
 ## Deployment
@@ -38,10 +38,11 @@ Requires Node >= 22.12.0 (see `package.json` engines).
 - ICP filing: materials submitted, server 1.14.70.145 (Tencent Cloud, 2-core 2GB) purchased to satisfy ICP requirement; site itself is hosted on Makers, not this server.
 
 ## Content & author voice
-The blog has two content categories, all written by one media author (禹畅):
+The blog has three content categories, all written by one media author (禹畅):
 
 1. **青年中医采访** — long-form profiles of young TCM doctors. These follow the established style below.
 2. **中医育儿/健康科普** — health science articles on TCM parenting, pediatric health, medical risk analysis. These explain concepts in plain Chinese, often debunking popular misconceptions with evidence (cited studies, guidelines from authoritative bodies like 中华医学会). They do NOT follow the interview profile arc but share the same brand voice (stance-driven, no neutral reporting, slogan lines).
+3. **行业动态** — conference reports and TCM industry event coverage. Factual, journalistic tone.
 
 When writing/editing posts, match this established voice:
 - **Stance-driven, not neutral reporting.** Recurring thesis: 明医 over 名医, 疗效 over 流量, 青年医生 over 体制内老专家. `why-write-young-doctors.md` is the author's manifesto — every interview argues this case.
@@ -68,6 +69,6 @@ When writing/editing posts, match this established voice:
 - `.astro/` (generated types) and `dist/` are git-ignored; the `astro:content` virtual module types come from there, so run a build/sync if type imports look broken.
 - No GitHub Actions workflows — CD is handled entirely by Makers git integration.
 - OG/Twitter meta intentionally absent — domestic Chinese site, those tags have no effect.
-- **After adding or editing any post:** review the full site for SEO — check that `<title>` format is correct (no duplication), all pages have unique `description` meta, sitemap regenerated, no broken internal links, and article slugs are clean pinyin.
+- **After adding or editing any post:** review the full site for SEO — check that `<title>` format is correct (no duplication), all pages have unique `description` meta, sitemap regenerated, no broken internal links, and article slugs are clean pinyin. If adding an interview post about a new doctor, include the `doctor` frontmatter block to appear on `/doctors/`.
 - **GEO 语义结构：** 首页的 Topics/FAQ section 和 JSON-LD（Person），文章页的 Article JSON-LD，均由 `docs/superpowers/specs/2026-06-22-geo-optimization-design.md` 定义。编辑 `index.astro` 或 `BlogPost.astro` 时勿移除这些语义区块。
 - **医生名录字段规范：** interview 文章的 `doctor` 字段（name / city / specialties）不得包含具体医馆/医院名称。city 不详填 `需询问`。specialties 用自由文本标签（3–5 个），无需遵循枚举。编辑 `/doctors/` 页面时勿移除 contact-cta。
