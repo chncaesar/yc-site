@@ -2,7 +2,6 @@
 title: '御医世家第七代，不用患者说症状，把脉即知——专访段正莉主任'
 description: '4岁背汤头歌背不出不准吃饭，父亲20年"飞行检查"督察门诊，段正莉主任以扎实的方剂功底和家传四代的中医临床功夫，专注不孕不育及妇科调理。'
 pubDate: '2026-06-22'
-heroImage: 'https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/duan-zhengli/cover.jpg'
 doctor:
   name: '段正莉'
   city: '武汉'
