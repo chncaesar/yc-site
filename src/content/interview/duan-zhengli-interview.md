@@ -22,8 +22,6 @@ doctor:
 
 据患者自述，这些情况在段主任处经调理后相继怀孕。
 
-![患者来诊情况示意](https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/duan-zhengli/img01.gif)
-
 据段主任介绍，每年慕名前来就诊的不孕不育患者至少上百人。以下均为患者自述案例。
 
 **看了一次，以为没效果，结果测出怀孕**
@@ -45,8 +43,6 @@ doctor:
 患者反馈，七付药吃了五付就怀孕。此后丈夫多次介绍朋友来就诊。
 
 ## 见效快，是被父亲练出来的
-
-![段正莉主任与父亲段少民的合影及从医记录](https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/duan-zhengli/img02.jpg)
 
 据段主任介绍，她的快速见效，与父亲段少民几十年的严格要求密不可分。
 
@@ -73,8 +69,6 @@ doctor:
 
 ## 不用患者说症状，把脉知性格
 
-![段主任门诊](https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/duan-zhengli/img05.jpg)
-
 在父亲的长期严格训练下，据段主任介绍，她保留着一个习惯：一般不需要患者先说症状，望闻切三诊后，她会用患者能理解的语言先说出症状，甚至说出患者的性格和习惯，经患者确认后再问诊开方。
 
 **扎实方剂功底，敢用少用、弃用的药**
@@ -88,19 +82,11 @@ doctor:
 
 ## 看不好病，真的睡不着
 
-![段主任与患者宝宝照片留存](https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/duan-zhengli/img06.jpg)
-
 从电子通信不发达时的信件寄照片，到后来的微信发照片、视频，段主任说闲下来就会点开这些宝宝照片看看。
 
 "只晓得看病，别的都不会。"——段主任自述。
 
-![大雪天坚持出诊](https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/duan-zhengli/img07.jpg)
-
 据段主任回忆，有一年春节前最后一次门诊，遇上冻雨大雪、交通几近瘫痪，她仍坚持上午门诊直到下午才结束，期间还帮助了一位未挂号、有些精神恍惚的患者仔细把脉问诊。
-
-![患者感谢与三代来诊](https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/duan-zhengli/img08.jpg)
-
-![患者宝宝照片](https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/duan-zhengli/img09.jpg)
 
 据患者自述，一家三四代，40多年在段主任处看病调理的不乏其数。春节患者送来的红包和现金，据段主任说全部退回，"一辈子不收红包，这是受父亲影响——医生的职责是解决患者疾苦，最好的感谢就是健康，介绍患者来就诊即可。"
 
