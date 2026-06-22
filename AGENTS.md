@@ -72,3 +72,4 @@ When writing/editing posts, match this established voice:
 - **After adding or editing any post:** review the full site for SEO — check that `<title>` format is correct (no duplication), all pages have unique `description` meta, sitemap regenerated, no broken internal links, and article slugs are clean pinyin. If adding an interview post about a new doctor, include the `doctor` frontmatter block to appear on `/doctors/`.
 - **GEO 语义结构：** 首页的 Topics/FAQ section 和 JSON-LD（Person），文章页的 Article JSON-LD，均由 `docs/superpowers/specs/2026-06-22-geo-optimization-design.md` 定义。编辑 `index.astro` 或 `BlogPost.astro` 时勿移除这些语义区块。
 - **医生名录字段规范：** interview 文章的 `doctor` 字段（name / city / specialties）不得包含具体医馆/医院名称。city 不详填 `需询问`。specialties 用自由文本标签（3–5 个），无需遵循枚举。编辑 `/doctors/` 页面时勿移除 contact-cta。
+- **从公众号抓取文章：** `pubDate` 必须使用公众号原文的发布日期（在浏览器中打开文章页面查找日期），而非抓取当天的日期。标题需重写以符合 Journalism tone（去掉感叹号、夸张词）。疗效描述全部套用"据XX医生说""患者自述/反馈"框架。
