@@ -6,9 +6,10 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 
-type Props = CollectionEntry<'interview'>['data'] | CollectionEntry<'health'>['data'] | CollectionEntry<'events'>['data'];
+type Props = (CollectionEntry<'interview'>['data'] | CollectionEntry<'health'>['data'] | CollectionEntry<'events'>['data']) & { collection?: string };
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, collection } = Astro.props;
+const categoryLabel = collection === 'interview' ? '专访' : collection === 'health' ? '科普' : collection === 'events' ? '动态' : '';
 ---
 
 <html lang="zh-CN">
@@ -25,8 +26,12 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			"dateModified": ${JSON.stringify((updatedDate ?? pubDate).toISOString())},
 			"author": {
 				"@type": "Person",
-				"name": "禹畅",
+				"name": "\u79b9\u7545",
 				"url": "https://xn--doyx8g.com"
+			},
+			"publisher": {
+				"@type": "Person",
+				"name": "\u79b9\u7545"
 			}
 		}`} />
 	</head>
@@ -46,6 +51,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 					<div class="article-header">
 						<div class="article-meta">
 							<FormattedDate date={pubDate} />
+							{categoryLabel && (
+								<span class="article-category"> · {categoryLabel}</span>
+							)}
 							{updatedDate && (
 								<span class="updated">· 更新于 <FormattedDate date={updatedDate} /></span>
 							)}
@@ -124,6 +132,11 @@ main {
 .updated {
 	margin-left: 0.3em;
 	font-style: italic;
+}
+
+.article-category {
+	color: var(--gold);
+	font-weight: 500;
 }
 
 .article-header h1 {

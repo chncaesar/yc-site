@@ -8,6 +8,9 @@ import HeaderLink from './HeaderLink.astro';
 		<a href="/" class="site-title">{SITE_TITLE}</a>
 		<div class="nav-links">
 			<HeaderLink href="/articles">文章</HeaderLink>
+			<HeaderLink href="/interview">专访</HeaderLink>
+			<HeaderLink href="/health">科普</HeaderLink>
+			<HeaderLink href="/events">动态</HeaderLink>
 			<HeaderLink href="/about">关于</HeaderLink>
 			<a href="/about#contact" class="nav-cta">联系</a>
 		</div>
@@ -51,6 +54,8 @@ import HeaderLink from './HeaderLink.astro';
 		display: flex;
 		align-items: center;
 		gap: 0.2em;
+		flex-wrap: wrap;
+		justify-content: flex-end;
 	}
 
 	.nav-links :global(a) {

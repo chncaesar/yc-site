@@ -18,10 +18,6 @@ const featuredInterviews = interviews.slice(0, 3);
 const otherFeatured = [...healthPosts, ...eventPosts]
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 	.slice(0, 3);
-const allPosts = [...interviews, ...healthPosts, ...eventPosts].sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
-const rest = allPosts.slice(6);
 ---
 
 <!doctype html>
@@ -45,14 +41,14 @@ const rest = allPosts.slice(6);
 		<!-- Hero -->
 		<section class="hero">
 			<div class="hero-inner">
-				<p class="hero-eyebrow">明医志 · 青年中医专访</p>
+				<p class="hero-eyebrow">明医志 · 长期写作 · 记录好中医</p>
 				<h1>找到那个能<br />治好你的人</h1>
 			<p class="hero-sub">
 				禹畅，长期专访青年中医的独立写作者。<br />
 				行业里最会吆喝的人，往往不是最会治病的人。<br />
 				我只写有疗效的人。
 			</p>
-				<a href="/blog" class="btn">读文章</a>
+				<a href="/articles" class="btn">读文章</a>
 				<a href="/about" class="btn btn-outline">了解作者</a>
 			</div>
 		</section>
@@ -110,6 +106,10 @@ const rest = allPosts.slice(6);
 						<dt>中医育儿与健康科普</dt>
 						<dd>基于权威指南与临床实践的家庭健康决策参考</dd>
 					</div>
+					<div class="topic-item">
+						<dt>行业会议与现场报道</dt>
+						<dd>中医行业活动记录、会议观察与一手报道</dd>
+					</div>
 				</dl>
 			</div>
 		</section>
@@ -127,24 +127,12 @@ const rest = allPosts.slice(6);
 			</div>
 		</section>
 
-		<!-- 全部文章 -->
-		{rest.length > 0 && (
-			<section class="all-posts">
-				<div class="section-inner">
-					<h2 class="section-title">全部文章</h2>
-					<ul class="post-list">
-						{rest.map((post) => (
-							<li class="post-item">
-								<a href={`/${post.collection}/${post.id}/`}>
-									<span class="post-title">{post.data.title}</span>
-									<span class="post-desc">{post.data.description}</span>
-								</a>
-							</li>
-						))}
-					</ul>
-				</div>
-			</section>
-		)}
+		<!-- 更多文章入口 -->
+		<section class="more-link">
+			<div class="section-inner">
+				<a href="/articles" class="btn">浏览全部文章 →</a>
+			</div>
+		</section>
 
 		<!-- FAQ -->
 		<section class="faq" id="faq">
@@ -337,51 +325,15 @@ const rest = allPosts.slice(6);
 	margin-bottom: 1.5em;
 }
 
-/* ── 全部文章列表 ── */
-.all-posts {
-	padding: 3em 0 4em;
+/* ── 更多文章入口 ── */
+.more-link {
+	padding: 0 0 4em;
 	background: var(--paper);
+	text-align: center;
 }
 
-.post-list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.post-item {
-	border-bottom: 1px solid var(--paper-dark);
-}
-
-.post-item a {
-	display: flex;
-	flex-direction: column;
-	gap: 0.2em;
-	padding: 1.1em 0;
-	text-decoration: none;
-	transition: background 0.15s;
-}
-
-.post-item a:hover .post-title {
-	color: var(--green-mid);
-}
-
-.post-title {
-	font-family: var(--font-serif);
-	font-size: 1em;
-	font-weight: 700;
-	color: var(--green-dark);
-	line-height: 1.5;
-}
-
-.post-desc {
-	font-size: 0.85em;
-	color: rgb(var(--ink-light));
-	line-height: 1.5;
-	display: -webkit-box;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
+.more-link .section-inner {
+	max-width: 720px;
 }
 
 /* ── 响应式 ── */

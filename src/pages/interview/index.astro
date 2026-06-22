@@ -4,7 +4,6 @@ import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
-import { SITE_DESCRIPTION } from '../../consts';
 
 const posts = (await getCollection('interview')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -14,7 +13,7 @@ const posts = (await getCollection('interview')).sort(
 <!doctype html>
 <html lang="zh-CN">
 	<head>
-		<BaseHead title="专访" description={SITE_DESCRIPTION} />
+		<BaseHead title="专访" description="青年中医人物专访，记录全国青年中医的临床特色、医德与师承故事。" />
 	</head>
 	<body>
 		<Header />

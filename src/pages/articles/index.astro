@@ -4,7 +4,6 @@ import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
-import { SITE_DESCRIPTION } from '../../consts';
 
 const interviews = await getCollection('interview');
 const healthPosts = await getCollection('health');
@@ -18,7 +17,7 @@ const allPosts = [...interviews, ...healthPosts, ...eventPosts].sort(
 <!doctype html>
 <html lang="zh-CN">
 	<head>
-		<BaseHead title="文章" description={SITE_DESCRIPTION} />
+		<BaseHead title="文章" description="禹畅的全部文章——青年中医专访、健康科普与行业动态。" />
 	</head>
 	<body>
 		<Header />

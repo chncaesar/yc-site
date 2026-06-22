@@ -4,7 +4,6 @@ import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
-import { SITE_DESCRIPTION } from '../../consts';
 
 const posts = (await getCollection('health')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -14,7 +13,7 @@ const posts = (await getCollection('health')).sort(
 <!doctype html>
 <html lang="zh-CN">
 	<head>
-		<BaseHead title="健康科普" description={SITE_DESCRIPTION} />
+		<BaseHead title="健康科普" description="中医育儿与健康科普，基于权威指南与临床实践的家庭健康决策参考。" />
 	</head>
 	<body>
 		<Header />
