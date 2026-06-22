@@ -69,3 +69,4 @@ When writing/editing posts, match this established voice:
 - No GitHub Actions workflows — CD is handled entirely by Makers git integration.
 - OG/Twitter meta intentionally absent — domestic Chinese site, those tags have no effect.
 - **After adding or editing any post:** review the full site for SEO — check that `<title>` format is correct (no duplication), all pages have unique `description` meta, sitemap regenerated, no broken internal links, and article slugs are clean pinyin.
+- **GEO 语义结构：** 首页的 Topics/FAQ section 和 JSON-LD（Person），文章页的 Article JSON-LD，均由 `docs/superpowers/specs/2026-06-22-geo-optimization-design.md` 定义。编辑 `index.astro` 或 `BlogPost.astro` 时勿移除这些语义区块。
