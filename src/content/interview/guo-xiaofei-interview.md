@@ -4,7 +4,7 @@ description: '复诊率常年超90%，日诊过百仍一号难求。郭小飞医
 pubDate: '2026-05-07'
 doctor:
   name: '郭小飞'
-  city: '需询问'
+  city: '上海'
   specialties: ['痛症针灸', '不孕调理', '内科杂症']
 ---
 

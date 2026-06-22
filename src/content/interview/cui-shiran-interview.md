@@ -4,7 +4,7 @@ description: '她是内部用脚投票选出的好医生，也是给医院创造
 pubDate: '2026-06-15'
 doctor:
   name: '崔诗然'
-  city: '需询问'
+  city: '上海'
   specialties: ['鼻炎耳鸣', '失眠郁证', '皮肤病湿疹', '胆结石']
 ---
 

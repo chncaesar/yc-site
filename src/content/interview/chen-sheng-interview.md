@@ -4,7 +4,7 @@ description: '6岁学中医、16岁替父行针，中医世家的陈胜却主动
 pubDate: '2026-05-12'
 doctor:
   name: '陈胜'
-  city: '需询问'
+  city: '上海'
   specialties: ['结节肿瘤调理', '慢性病', '失眠焦虑抑郁', '中西医结合']
 ---
 

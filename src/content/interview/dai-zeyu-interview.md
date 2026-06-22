@@ -5,7 +5,7 @@ pubDate: '2026-06-19'
 heroImage: 'https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/images/dai-zeyu-interview/img_00.jpg'
 doctor:
   name: '代泽宇'
-  city: '杭州'
+  city: '上海'
   specialties: ['针灸', '痛风', '强直性脊柱炎', '腰痛', '脾胃调理']
 ---
 
