@@ -11,13 +11,8 @@ const interviews = (await getCollection('interview')).sort(
 const healthPosts = (await getCollection('health')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
-const eventPosts = (await getCollection('events')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
 const featuredInterviews = interviews.slice(0, 3);
-const otherFeatured = [...healthPosts, ...eventPosts]
-	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-	.slice(0, 3);
+const otherFeatured = healthPosts.slice(0, 3);
 ---
 
 <!doctype html>
@@ -76,7 +71,7 @@ const otherFeatured = [...healthPosts, ...eventPosts]
 		<!-- 精选科普 & 动态 -->
 		<section class="featured-other">
 			<div class="section-inner">
-				<h2 class="section-title">健康科普 &amp; 行业动态</h2>
+				<h2 class="section-title">健康科普</h2>
 				<ul class="cards">
 					{otherFeatured.map((post) => (
 						<li class="card">
