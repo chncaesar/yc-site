@@ -38,6 +38,7 @@ Requires Node >= 22.12.0 (see `package.json` engines).
 ## ICP已通过
 - ICP备案号：浙ICP备2026048952号，已悬挂于 `Footer.astro` 底部
 - `astro.config.mjs` `site`: `https://xn--doyx8g.com`（Punycode for 禹畅.com）
+- 域名注册：`禹畅.com` 在腾讯云购买并管理（DNS 解析也在腾讯云）
 - DNS: 禹畅.com CNAME → `xn--doyx8g.com.pages.dnsoe4.com`，全球边缘解析
 - 公安联网备案：待办，网站上线后30日内完成（平台：beian.mps.gov.cn，需提交 HTTPS 证书）
 - 上线状态：`https://禹畅.com` 已可正常访问（2026-07-01）
