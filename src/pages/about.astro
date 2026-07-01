@@ -32,9 +32,12 @@ import Header from '../components/Header.astro';
 		<!-- 一句话介绍 -->
 		<section class="bio-section">
 			<div class="bio-inner">
-				<p class="bio-text">
-					有底线的原党报版面负责人，莆田系医院当道时曾拒绝其冠名；中医考证中，采访了全国几十位好中医；多项国家专利，曾作为重要贡献者获300万科技补助，高交会&国际工博会奖项；会带娃爬树，玩飞拉达，种菜。
-				</p>
+			<p class="bio-text">
+				有底线的原党报版面负责人，莆田系医院当道时曾拒绝其冠名；中医考证中，采访了全国几十位好中医；多项国家专利，曾作为重要贡献者获300万科技补助，高交会&国际工博会奖项；会带娃爬树，玩飞拉达，种菜。
+			</p>
+			<p class="bio-link">
+				<a href="/story">→ 读禹畅自学中医的故事</a>
+			</p>
 			</div>
 		</section>
 
@@ -169,6 +172,21 @@ import Header from '../components/Header.astro';
 	line-height: 1.95;
 	color: rgb(var(--ink));
 	margin: 0;
+}
+
+.bio-link {
+	margin: 1em 0 0;
+	font-size: 0.95em;
+}
+
+.bio-link a {
+	color: var(--gold);
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.bio-link a:hover {
+	text-decoration: underline;
 }
 
 /* 能力模块 */
