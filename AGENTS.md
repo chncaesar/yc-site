@@ -30,13 +30,16 @@ Requires Node >= 22.12.0 (see `package.json` engines).
 - Static-only output; no SSR/server runtime.
 - Build command: `npm run build`, output directory: `dist` (configured in Makers project settings).
 - Node version specified via `.nvmrc` in repo root (`22`) — Makers reads this to select the correct Node runtime.
+- HTTPS: 腾讯云免费证书（DV，有效期90天），在 Makers 控制台绑定自定义域名时上传部署。
 - **Free tier limits:** KV storage 1GB, Blob storage 1GB, 500 builds/month.
 
 ## ICP已通过
-- ICP备案号：浙ICP备2026048952号
-- `astro.config.mjs` `site` 已设为 `https://xn--doyx8g.com`（Punycode for 禹畅.com）
-- 公安联网备案：待办，网站上线后30日内完成
-- 域名绑定：EdgeOne Makers 控制台绑定自定义域名 → CNAME → 自动 HTTPS
+- ICP备案号：浙ICP备2026048952号，已悬挂于 `Footer.astro` 底部
+- `astro.config.mjs` `site`: `https://xn--doyx8g.com`（Punycode for 禹畅.com）
+- DNS: 禹畅.com CNAME → `xn--doyx8g.com.pages.dnsoe4.com`，全球边缘解析
+- HTTPS: 腾讯云免费证书（DV，有效期90天），EdgeOne Makers 控制台绑定自定义域名后部署
+- 公安联网备案：待办，网站上线后30日内完成（平台：beian.mps.gov.cn，需提交 HTTPS 证书）
+- 上线状态：`https://禹畅.com` 已可正常访问（2026-07-01）
 
 ## Content & author voice
 The blog has three content categories, all written by one media author (禹畅):
