@@ -17,6 +17,7 @@ const today = new Date();
 	</div>
 	<div class="footer-bottom">
 		© {today.getFullYear()} 禹畅 · 明医志 · 版权所有
+		<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener" class="icp-link">浙ICP备2026048952号</a>
 	</div>
 </footer>
 
@@ -78,6 +79,17 @@ const today = new Date();
 		border-top: 1px solid rgba(201,168,76,0.2);
 		font-size: 0.8em;
 		color: rgba(247,243,236,0.4);
+	}
+
+	.icp-link {
+		margin-left: 1em;
+		text-decoration: none;
+		color: rgba(247,243,236,0.4);
+		transition: color 0.2s;
+	}
+
+	.icp-link:hover {
+		color: var(--gold);
 	}
 
 	@media (max-width: 480px) {

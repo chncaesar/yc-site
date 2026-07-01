@@ -32,10 +32,11 @@ Requires Node >= 22.12.0 (see `package.json` engines).
 - Node version specified via `.nvmrc` in repo root (`22`) — Makers reads this to select the correct Node runtime.
 - **Free tier limits:** KV storage 1GB, Blob storage 1GB, 500 builds/month.
 
-## Pending after ICP approval
-- Set `astro.config.mjs` `site` to `https://xn--doyx8g.com` (Punycode for 禹畅.com) — canonical URLs, sitemap, and RSS all derive from this; currently still `https://example.com`.
-- Bind custom domain in Makers console → CNAME → auto HTTPS.
-- ICP filing: materials submitted, server 1.14.70.145 (Tencent Cloud, 2-core 2GB) purchased to satisfy ICP requirement; site itself is hosted on Makers, not this server.
+## ICP已通过
+- ICP备案号：浙ICP备2026048952号
+- `astro.config.mjs` `site` 已设为 `https://xn--doyx8g.com`（Punycode for 禹畅.com）
+- 公安联网备案：待办，网站上线后30日内完成
+- 域名绑定：EdgeOne Makers 控制台绑定自定义域名 → CNAME → 自动 HTTPS
 
 ## Content & author voice
 The blog has three content categories, all written by one media author (禹畅):
@@ -65,7 +66,6 @@ When writing/editing posts, match this established voice:
 - **Cross-promotion:** every article bottom must include a "禹畅也写亲子教育" section (below `.contact-block` in `BlogPost.astro`) with the WeChat QR code at `/lazy_mom_qrcode.jpg` and text linking to the author's other public account 懒妈熊娃的科普笔记. The About page also mentions this account.
 
 ## Repo-specific gotchas
-- `astro.config.mjs` `site` is still the placeholder `https://example.com` — see Pending section above.
 - `.astro/` (generated types) and `dist/` are git-ignored; the `astro:content` virtual module types come from there, so run a build/sync if type imports look broken.
 - No GitHub Actions workflows — CD is handled entirely by Makers git integration.
 - OG/Twitter meta intentionally absent — domestic Chinese site, those tags have no effect.
