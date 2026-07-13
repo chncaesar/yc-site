@@ -1,11 +1,13 @@
 ---
+import { BEIAN_INFO, SITE_TITLE } from '../consts';
+
 const today = new Date();
 ---
 
 <footer>
 	<div class="footer-inner">
 		<div class="footer-brand">
-			<span class="footer-title">禹畅 · 明医志</span>
+			<span class="footer-title">{SITE_TITLE}</span>
 			<p class="footer-tagline">投给疗效，不投给流量</p>
 		</div>
 		<div class="footer-links">
@@ -16,8 +18,17 @@ const today = new Date();
 		</div>
 	</div>
 	<div class="footer-bottom">
-		© {today.getFullYear()} 禹畅 · 明医志 · 版权所有
-		<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener" class="icp-link">浙ICP备2026048952号</a>
+		<span>© {today.getFullYear()} {SITE_TITLE} · 版权所有</span>
+		<a href={BEIAN_INFO.icp.href} target="_blank" rel="noopener" class="beian-link">{BEIAN_INFO.icp.label}</a>
+		<a
+			href={BEIAN_INFO.publicSecurity.href}
+			target="_blank"
+			rel="noopener"
+			class="beian-link police-beian"
+		>
+			<img src={BEIAN_INFO.publicSecurity.logoSrc} alt={BEIAN_INFO.publicSecurity.logoAlt} />
+			{BEIAN_INFO.publicSecurity.label}
+		</a>
 	</div>
 </footer>
 
@@ -79,17 +90,33 @@ const today = new Date();
 		border-top: 1px solid rgba(201,168,76,0.2);
 		font-size: 0.8em;
 		color: rgba(247,243,236,0.4);
+		display: flex;
+		align-items: center;
+		gap: 0.9em;
+		flex-wrap: wrap;
 	}
 
-	.icp-link {
-		margin-left: 1em;
+	.beian-link {
 		text-decoration: none;
 		color: rgba(247,243,236,0.4);
 		transition: color 0.2s;
 	}
 
-	.icp-link:hover {
+	.beian-link:hover {
 		color: var(--gold);
+	}
+
+	.police-beian {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35em;
+	}
+
+	.police-beian img {
+		width: 1.1em;
+		height: 1.1em;
+		border-radius: 0;
+		flex: 0 0 auto;
 	}
 
 	@media (max-width: 480px) {
