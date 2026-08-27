@@ -61,7 +61,6 @@ When writing/editing posts, match this established voice:
 - **Editorial compliance (中国大陆发布):**
   - Efficacy claims must be attributed to doctor/patient self-report, never stated as fact by the author. Use "据张医生说""患者反馈" framing, not "张医生治好了XX病".
   - Concrete "几付药治好某病" phrasing carries 医疗广告合规 risk — flag, don't silently amplify.
-  - Never promote a specific clinic, hospital, or health platform by name. If the source article contains such placement (e.g. "base上海的某高管帮他推荐了某医馆"), remove it entirely — the patient's path to the doctor is their own business.
   - Keep promotional tone weak. Avoid marketing-style superlatives ("奇迹""神仙""一手治愈"), celebrity-endorsement framing, and clickbait titles. Write as journalism, not advertorial.
   - When adapting content from other platforms, strip their branding and promotional language; retain only the doctor's story, clinical thinking, and verifiable facts. This applies even when the author is republishing their own content from another platform.
 - **科普文章特别合规：**
