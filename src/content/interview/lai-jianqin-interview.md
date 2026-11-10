@@ -3,10 +3,6 @@ title: '脾胃病|胃肠炎|失眠…杭州市名中医来建琴:40年基层炼�
 description: '杭州市名中医来建琴，40年基层临床。肠癌晚期九年仍健在，重度萎缩性胃炎伴肠化病理全消，四年便秘一味泻药没用——看她望诊当先，也看她跟着连建伟老师学"做人"。'
 pubDate: '2026-11-04'
 heroImage: 'https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/lai-jianqin/img_00.webp'
-doctor:
-  name: '来建琴'
-  city: '杭州'
-  specialties: ['脾胃病', '胃肠炎', '失眠', '萎缩性胃炎', '疑难杂症']
 ---
 
 来建琴主任，浙江省基层名中医

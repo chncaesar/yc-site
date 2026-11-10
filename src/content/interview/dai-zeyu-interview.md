@@ -3,10 +3,6 @@ title: '痛风结石近视痛经胃痛腰痛强直，5岁启蒙学医的代医�
 description: '"患者一看你这么年轻，甚至都不愿意让你试第一次，这也倒逼我练就了尽量一次见效的本事。"5岁随名医外婆读《内经》的代泽宇，靠针到病除赢得患者信任。'
 pubDate: '2026-06-19'
 heroImage: 'https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/images/dai-zeyu-interview/img_00.jpg'
-doctor:
-  name: '代泽宇'
-  city: '上海'
-  specialties: ['针灸', '痛风', '强直性脊柱炎', '腰痛', '脾胃调理']
 ---
 
 针到病除——代泽宇

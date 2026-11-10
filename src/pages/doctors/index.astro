@@ -1,30 +1,48 @@
 ---
 import { getCollection } from 'astro:content';
+import { doctors } from '../../data/doctors';
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
 
-const interviews = await getCollection('interview');
-const doctors = interviews
-	.filter((post) => post.data.doctor)
+const postsById = new Map((await getCollection('interview')).map((post) => [post.id, post]));
+
+const rows = doctors
+	.map((doctor) => {
+		if (doctor.interviews.length === 0) {
+			throw new Error(`医生「${doctor.name}」没有关联任何专访`);
+		}
+		const interviews = doctor.interviews
+			.map((id) => {
+				const post = postsById.get(id);
+				if (!post) {
+					throw new Error(`医生「${doctor.name}」关联的专访不存在：${id}`);
+				}
+				const year = post.data.pubDate.getFullYear();
+				const month = String(post.data.pubDate.getMonth() + 1).padStart(2, '0');
+				return { id: post.id, label: `${year}-${month} 专访 →` };
+			})
+			.sort((a, b) => b.label.localeCompare(a.label));
+		return { doctor, interviews };
+	})
 	.sort((a, b) => {
-		const cityA = a.data.doctor!.city === '需询问' ? 'zzz' : a.data.doctor!.city;
-		const cityB = b.data.doctor!.city === '需询问' ? 'zzz' : b.data.doctor!.city;
-		return cityA.localeCompare(cityB, 'zh') || a.data.doctor!.name.localeCompare(b.data.doctor!.name, 'zh');
+		const cityA = a.doctor.city === '需询问' ? 'zzz' : a.doctor.city;
+		const cityB = b.doctor.city === '需询问' ? 'zzz' : b.doctor.city;
+		return cityA.localeCompare(cityB, 'zh') || a.doctor.name.localeCompare(b.doctor.name, 'zh');
 	});
 
 const jsonLd = JSON.stringify({
 	'@context': 'https://schema.org',
-	'@graph': doctors.map((post) => ({
+	'@graph': rows.map(({ doctor, interviews }) => ({
 		'@type': 'Person',
-		'name': post.data.doctor!.name,
+		'name': doctor.name,
 		'jobTitle': '中医师',
-		'knowsAbout': post.data.doctor!.specialties,
+		'knowsAbout': doctor.specialties,
 		'workLocation': {
 			'@type': 'Place',
-			'addressLocality': post.data.doctor!.city === '需询问' ? undefined : post.data.doctor!.city,
+			'addressLocality': doctor.city === '需询问' ? undefined : doctor.city,
 		},
-		'url': new URL(`/interview/${post.id}/`, 'https://xn--doyx8g.com').href,
+		'url': new URL(`/interview/${interviews[0].id}/`, 'https://xn--doyx8g.com').href,
 	})),
 });
 ---
@@ -60,15 +78,21 @@ const jsonLd = JSON.stringify({
 						</tr>
 					</thead>
 					<tbody>
-						{doctors.map((post) => (
+						{rows.map(({ doctor, interviews }) => (
 							<tr>
-								<td class="doctor-name">{post.data.doctor!.name}</td>
-								<td class="doctor-city">{post.data.doctor!.city}</td>
-								<td class="doctor-specialties">
-									{post.data.doctor!.specialties.join('　')}
-								</td>
+								<td class="doctor-name">{doctor.name}</td>
+								<td class="doctor-city">{doctor.city}</td>
+								<td class="doctor-specialties">{doctor.specialties.join('　')}</td>
 								<td class="doctor-link">
-									<a href={`/interview/${post.id}/`}>查看专访 →</a>
+									{interviews.length === 1 ? (
+										<a href={`/interview/${interviews[0].id}/`}>查看专访 →</a>
+									) : (
+										interviews.map((interview) => (
+											<a href={`/interview/${interview.id}/`} class="multi">
+												{interview.label}
+											</a>
+										))
+									)}
 								</td>
 							</tr>
 						))}
@@ -175,6 +199,12 @@ const jsonLd = JSON.stringify({
 	text-decoration: none;
 	font-weight: 500;
 	white-space: nowrap;
+}
+
+.doctor-link a.multi {
+	display: block;
+	font-size: 0.9em;
+	padding: 0.1em 0;
 }
 
 .doctor-link a:hover {

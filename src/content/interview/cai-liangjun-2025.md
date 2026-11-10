@@ -3,10 +3,6 @@ title: '从儿科到妇儿——蔡良俊医生的十年蜕变路'
 description: '从初到杭州时专攻儿科咳嗽的年轻医生，到如今从容应对妇科、儿科、失眠、抑郁的全科中医，蔡良俊医生用十年完成了一场从技术到理念的蜕变。'
 pubDate: '2025-08-18'
 heroImage: 'https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/cai-liangjun/cover2.jpg'
-doctor:
-  name: '蔡良俊'
-  city: '杭州'
-  specialties: ['小儿咳嗽', '妇科调理', '痛经', '多囊卵巢', '失眠']
 ---
 
 在杭州的中医圈，蔡良俊医生的名字常常和两个标签绑定——"咳嗽王"与"妇儿专家"。

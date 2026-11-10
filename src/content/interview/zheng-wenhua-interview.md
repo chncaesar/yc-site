@@ -2,10 +2,6 @@
 title: '郑文华：孩子叫她"甜甜膏医生"'
 description: '2岁宝宝吃完膏方还惦记下次门诊，痛经少女半年告别止痛药，38岁试管失败的妈妈自然怀上——郑文华用"一人一方"的膏方，把疗效落到患者能坚持吃下去的每一天。'
 pubDate: '2026-08-14'
-doctor:
-  name: '郑文华'
-  city: '上海'
-  specialties: ['膏方调理', '儿科助长', '痛经闭经', '备孕助孕', '结节肾病']
 ---
 
 ![郑文华医生](https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/zheng-wenhua/cover.jpg)

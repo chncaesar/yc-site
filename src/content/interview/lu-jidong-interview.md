@@ -2,10 +2,6 @@
 title: '跨科研和临床，8年攻坚近千案例，破脱发难题'
 description: '有效率85%+，常常一两个月见效，卢继东破脂溢性、产后脱发、熬夜&压力脱发，植发后固发难题。'
 pubDate: '2026-08-24'
-doctor:
-  name: '卢继东'
-  city: '杭州'
-  specialties: ['脱发调理', '脂溢性脱发', '产后脱发', '亚健康管理', '中医复方研究']
 ---
 
 ![跨科研和临床，8年近千案例解脱发难题](https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/lu-jidong-interview/article-intro.jpg)

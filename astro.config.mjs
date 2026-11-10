@@ -7,6 +7,10 @@ import { defineConfig, fontProviders } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://xn--doyx8g.com',
+	redirects: {
+		// 早期拼音有误，保留旧地址跳转
+		'/interview/shi-ruixiang-interview': '/interview/shen-ruixiang-interview/',
+	},
 	integrations: [mdx(), sitemap()],
 	fonts: [
 		{

@@ -3,10 +3,6 @@ title: '80岁老太失眠，3付药好了；顽固咳嗽3付药搞定，朱汇�
 description: '1付药失眠好多了；1付药退烧；2付咳嗽变轻；3付药不胀气了；5付药新冠转阴；1周药精力变好，不心慌心绞痛了……'
 pubDate: '2026-11-06'
 heroImage: 'https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/zhu-huibin-interview/img12.webp'
-doctor:
-  name: '朱汇滨'
-  city: '南京'
-  specialties: ['顽固性咳嗽', '肺结节', '失眠多梦', '疲劳乏力', '胃肠不适']
 ---
 
 1付药失眠好多了；1付药退烧；

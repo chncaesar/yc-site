@@ -3,10 +3,6 @@ title: '孩子发烧27天致盲 3元经方复明，7月宝宝高烧 1天血便20
 description: '孩子发烧27天致盲 3元经方复明，7月宝宝高烧 1天血便20次 4小时退烧，五代中医儿科传人沈瑞翔医生来杭坐诊啦！擅治鼻炎湿疹积食腹泻夜啼'
 pubDate: '2026-09-28'
 heroImage: 'https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/shen-ruixiang-interview/image1.webp'
-doctor:
-  name: '沈瑞翔'
-  city: '杭州'
-  specialties: ['儿科常见病', '鼻炎', '湿疹', '积食', '腹泻', '夜啼']
 ---
 
 孩子发烧27天致盲 3元经方复明，7月宝宝高烧 1天血便20次 4小时退烧，五代中医儿科传人沈瑞翔医生来杭坐诊啦！擅治鼻炎湿疹积食腹泻夜啼

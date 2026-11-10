@@ -3,10 +3,6 @@ title: '颈椎病、脑梗后遗症、腰间盘突出、帕金森…靠疗效说
 description: '没有公立医院光环，于得水医生从在校组建互治社团练手，到全国遍寻名师，以触诊绝活和可复现的疗效赢得患者信赖。'
 pubDate: '2026-06-22'
 heroImage: 'https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/yu-deshui/cover.jpg'
-doctor:
-  name: '于得水'
-  city: '杭州'
-  specialties: ['正骨整脊', '脑梗后遗症', '颈腰椎病', '帕金森缓解', '静脉曲张']
 ---
 
 没有公立医院的光环，没有各种职称荣誉加持，能在市场激烈角沐中站稳脚，获得患者信赖的青年医生，靠的就是疗效和口碑。

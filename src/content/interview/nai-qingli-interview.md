@@ -3,10 +3,6 @@ title: '乃清礼医生：三十八年临床路与三九脉法'
 description: '从广西壮乡少年自学开方，到电厂十一年义诊，再到建立三九脉法体系，乃清礼医师讲述自己的临床路与辨脉用药思路。'
 pubDate: '2026-08-27'
 heroImage: 'https://zjc-public.oss-cn-hangzhou.aliyuncs.com/yc-site/interview/nai-qingli-interview/img_00.jpg'
-doctor:
-  name: '乃清礼'
-  city: '杭州'
-  specialties: ['肠胃病', '失眠', '鼻炎', '体虚调理', '妇科调理']
 ---
 
 据诊室外患者反馈：
