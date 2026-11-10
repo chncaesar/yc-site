@@ -51,7 +51,10 @@ const otherFeatured = healthPosts.slice(0, 3);
 		<!-- 精选文章 -->
 		<section class="featured">
 			<div class="section-inner">
-				<h2 class="section-title">近期专访</h2>
+				<div class="featured-heading">
+					<h2 class="section-title">近期专访</h2>
+					<a class="featured-more" href="/interview/">查看全部 →</a>
+				</div>
 				<ul class="cards">
 					{featuredInterviews.map((post) => (
 						<li class="card">
@@ -71,7 +74,10 @@ const otherFeatured = healthPosts.slice(0, 3);
 		<!-- 精选科普 & 动态 -->
 		<section class="featured-other">
 			<div class="section-inner">
-				<h2 class="section-title">健康科普</h2>
+				<div class="featured-heading">
+					<h2 class="section-title">健康科普</h2>
+					<a class="featured-more" href="/health/">查看全部 →</a>
+				</div>
 				<ul class="cards">
 					{otherFeatured.map((post) => (
 						<li class="card">
@@ -222,6 +228,44 @@ const otherFeatured = healthPosts.slice(0, 3);
 	padding-bottom: 0.5em;
 	border-bottom: 2px solid var(--gold);
 	display: inline-block;
+}
+
+.featured-heading {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 0.75em;
+	margin-bottom: 1.5em;
+}
+
+.featured-heading .section-title {
+	flex: 0 1 auto;
+	min-width: 0;
+	margin: 0;
+}
+
+.featured-more {
+	flex: 0 0 auto;
+	min-height: 44px;
+	display: inline-flex;
+	align-items: center;
+	padding: 0 0.25em;
+	color: var(--gold);
+	font-size: 0.875em;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.featured-more:hover,
+.featured-more:focus-visible {
+	color: var(--green-dark);
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+}
+
+.featured-more:focus-visible {
+	outline: 2px solid var(--gold);
+	outline-offset: 2px;
 }
 
 /* ── 精选文章卡片 ── */
