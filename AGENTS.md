@@ -67,7 +67,7 @@ When writing/editing posts, match this established voice:
   - 引用权威来源（《柳叶刀》、中华医学会指南等）增强可信度，避免"据专家说"等模糊引用。
   - 批评某种疗法/产品时，基于公开文献和指南，不点名攻击具体品牌或机构。
   - 口语化表达（"哦""呢""呀"）允许在科普中使用，以拉近和读者距离；但不能滑向贩卖焦虑或制造对立。"选XX还是选健康"这类人为制造二分法的写法需避免。
-- **Cross-promotion:** every article bottom must include a "禹畅也写亲子教育" section (below `.contact-block` in `BlogPost.astro`) with the WeChat QR code at `/lazy_mom_qrcode.jpg` and text linking to the author's other public account 懒妈熊娃的科普笔记. The About page also mentions this account.
+- **Cross-promotion:** every article bottom includes a "禹畅也做中医科普" section (below `.contact-block` in `BlogPost.astro`) with the WeChat QR code at `/wechat-qrcode.jpg` and text pointing to the author's WeChat public account 禹畅明医志. The About page also mentions this account.
 
 ## Repo-specific gotchas
 - `.astro/` (generated types) and `dist/` are git-ignored; the `astro:content` virtual module types come from there, so run a build/sync if type imports look broken.
